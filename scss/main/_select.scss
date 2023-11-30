@@ -1,0 +1,90 @@
+.select {
+    height: 995px;
+    background: #D9D9D9;
+    background: url(./../img/line-vertical.svg) 50% 530px no-repeat,
+        url(./../img/select_img.jpg) center no-repeat;
+    background-size: auto, cover;
+}
+
+.select__header {
+    padding-top: 157px;
+    color: $white;
+    text-align: center;
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 135px;
+    /* 105.469% */
+    text-transform: uppercase;
+}
+
+.select__text {
+    padding-top: 38px;
+    color: $white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.select__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 154px) 172px 1fr 168px;
+    align-items: center;
+    margin-top: 182px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    width: 928px;
+    height: 64px;
+    border-radius: 30px;
+    background-color: $white;
+
+}
+
+.select__menu-item {
+    height: 40px;
+    border-right: 1px solid $line; 
+    padding-left: 20px;
+    cursor: pointer;
+
+    &_ch {
+        border:none;
+    }
+}
+
+.select__menu-title {
+    color: $grey-text;
+    font-size: 12px;
+    font-weight: 400;
+
+    &_up {
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.5;
+        text-transform: uppercase;
+    }
+}
+
+.select__menu-text {
+    color: $black-1;
+    font-size: 16px;
+    font-weight: 500;
+
+    &_up {
+        text-transform: uppercase;
+    }
+}
+.select__button {
+    margin-right: 12px;
+    padding: 12px 28px;
+    background-color: $red;
+    color: $white;
+    border: none;
+
+    &:hover {
+        background-color: $red-hov; 
+    }
+
+}
