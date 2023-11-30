@@ -9,6 +9,10 @@
     z-index: 1;
     transition: top 1s ease-in-out,
     opacity 1s ease-in-out;
+
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 .menu__show {
@@ -23,6 +27,17 @@
     padding-bottom: 52px;
     padding-left: calc(50% - 305px );
     padding-right: calc(50% - 365px );  
+
+    @include mediaDesktopTab {
+        padding-left: calc(50% - 390px );
+        padding-right: calc(50% - 280px );    
+    }
+
+    @include mediaTablet {
+        padding-left: calc(50% - 255px );
+        padding-right: calc(50% - 255px );
+        column-gap: 35px;     
+    }
 }
 
 // .header__menu-content1 {}
