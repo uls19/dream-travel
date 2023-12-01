@@ -11,6 +11,7 @@ body {
 .container {
     max-width: 1920px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .button {
@@ -29,6 +30,6 @@ body {
 }
 
 .box-bottom {
-    height: 300px;
-    background-color: antiquewhite;
+    height: 660px;
+    background-color: rgb(206, 206, 206);
 }
