@@ -1,0 +1,197 @@
+.last-minute {
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 814px;
+  padding-bottom: 140px;
+
+  @include mediaMobile {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.last-minute__top {
+  margin: 134px auto 0;
+  max-width: 1116px;
+}
+
+.last-minute__header {
+  position: relative;
+
+  &::after {
+    content: "Tours";
+    position: absolute;
+    top: 50px;
+    left: -140px;
+    color: $line;
+    font-family: Millanova;
+    font-size: 52px;
+    font-weight: 400;
+    text-transform: none;
+    z-index: 5;
+
+    @include mediaDesktop {
+      top: -20px;
+      left: 385px;
+    }
+
+    @include mediaMobile {
+      top: -64px;
+      left: 0px;
+      right: 0;
+      font-size: 36px;
+    }
+  }
+
+}
+
+.swiper {
+  width: 1116px;
+  height: 340px;
+  margin: 62px auto 52px;
+  overflow: visible;
+}
+
+.last-minute__left-box {
+  position: absolute;
+  width: 400px;
+  height: 460px;
+  left: -415px;
+  top: -50px;
+  z-index: 5;
+  background: $white;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 256px;
+  height: 340px;
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.94%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.last-minute__slide1 {
+  background-image: url(./../img/slider_one/venecia.jpg);
+}
+.last-minute__slide2 {
+  background-image: url(./../img/slider_one/turok.jpg);
+}
+.last-minute__slide3 {
+  background-image: url(./../../img/slider_one/italia_rim.jpg);
+}
+.last-minute__slide4 {
+  background-image: url(./../img/slider_one/dubai.jpg);
+}
+.last-minute__slide5 {
+  background-image: url(./../img/slider_one/florencia.jpg);
+}
+.last-minute__slide6 {
+  background-image: url(./../img/slider_one/venecia.jpg);
+}
+.last-minute__slide7 {
+  background-image: url(./../img/slider_one/turok.jpg);
+}
+.last-minute__slide8 {
+  background-image: url(./../../img/slider_one/italia_rim.jpg);
+}
+.last-minute__slide9 {
+  background-image: url(./../img/slider_one/dubai.jpg);
+}
+.last-minute__slide10 {
+  background-image: url(./../img/slider_one/italia_rim1.jpg);
+}
+
+.last-minute__slide-top {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.last-minute__slide-text {
+  padding: 3px 10px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid $white;
+
+}
+
+.last-minute__slide-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.last-minute__slide-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.last-minute__slide-date {
+color:$white;
+font-size: 14px;
+font-weight: 500;
+}
+
+.last-minute__slide-info {
+margin-right: 12px;
+color: $white;
+font-size: 14px;
+font-weight: 300;
+}
+
+.last-minute__slide-line {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.last-minute__pagination-box {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 24px;
+  max-width: 1116px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+
+  opacity: 0;
+  top: -225px;
+  border-radius: 32px;
+  width: 44px;
+  height: 44px;
+  background: $white;
+  --swiper-theme-color: #1C1C1C;
+  --swiper-navigation-size: 14px;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.swiper-button-next {
+  @include mediaMobile {
+    right: 0;
+  }
+}
+
+.swiper-button-prev {
+  @include mediaMobile {
+    left: 0;
+  }
+}
+
+.swiper-pagination-horizontal {
+  --swiper-pagination-progressbar-size: 2px;
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #1C1C1C;
+  background-color: $line;
+
+}

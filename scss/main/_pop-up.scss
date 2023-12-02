@@ -10,12 +10,12 @@
     padding-right: 20px;
     z-index: 8;
     overflow-x: hidden;
- 
 }
 
 .popup__show {
     @include mediaMobile {
      display: block;
+     
     }   
 }
 

@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rasfire-personal-use');
+
+@font-face {
+    font-family:'Millanova';
+    src: url('./../fonts/millanova.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/millanova.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/millanova.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/millanova.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/millanova.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/millanova.svg#millanova') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Chandra';
+    src: url('./../fonts/Chandra.ttf') format('truetype'),
+        url('./../fonts/HELLO-CHANDRA-BF64bcefa81499d.woff') format('woff');
+}
+
 
 body {
     font-family: $fonts-main;
@@ -9,7 +33,7 @@ body {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1918px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -33,3 +57,28 @@ body {
     height: 660px;
     background-color: rgb(206, 206, 206);
 }
+
+.header-last {
+color: $black-1;
+font-size: 44px;
+font-weight: 500;
+text-transform: uppercase;
+
+@include mediaMobile {
+font-size: 28px; 
+text-align: center;
+}
+}
+
+.title-last {
+color: $black-1;
+font-size: 24px;
+font-weight: 300;
+text-transform: uppercase;
+
+@include mediaMobile {
+    font-size: 16px; 
+    text-align: center;
+    }
+}
+

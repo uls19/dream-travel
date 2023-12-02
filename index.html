@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
@@ -91,7 +94,7 @@
                 </div>
             </div>
 
-        </div>  
+        </div>
     </header>
 
     <div class="pop-up">
@@ -121,7 +124,8 @@
                     <li><a class="pop-up__menu-link" href="#!">Подбор тура</a></li>
                 </ul>
                 <ul class="pop-up__box2">
-                    <li><a class="pop-up__menu-link" href="#!" style="color: #EC1C24; font-weight: 500";>Горящие туры</a></li>
+                    <li><a class="pop-up__menu-link" href="#!" style="color: #EC1C24; font-weight: 500">Горящие туры</a>
+                    </li>
                     <li><a class="pop-up__menu-link" href="#!">Как купить и оплатить тур</a></li>
                 </ul>
 
@@ -186,8 +190,187 @@
             </button>
         </div>
     </section>
-    
-        <script src="./js/main.js"></script>
+    <section class="container last-minute">
+        <div class="last-minute__top">
+            <h2 class="header-last last-minute__header">горящие туры</h2>
+            <h4 class="title-last last-minute__title">Поймайте момент</h4>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="last-minute__left-box"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide last-minute__slide1">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Венеция</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide2">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">14 дней</p>
+                        <p class="last-minute__slide-text">от 95 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">турция <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Каппадокия</h4>
+                        <p class="last-minute__slide-date">16-30 сентября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide3">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">5 дней</p>
+                        <p class="last-minute__slide-text">от 80 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Рим</h4>
+                        <p class="last-minute__slide-date">10-15 ноября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide4">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">ОАЭ <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Дубай</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide5">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Флоренция</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide6">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Венеция</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide7">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">14 дней</p>
+                        <p class="last-minute__slide-text">от 95 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">турция <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Каппадокия</h4>
+                        <p class="last-minute__slide-date">16-30 сентября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide8">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">5 дней</p>
+                        <p class="last-minute__slide-text">от 80 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Рим</h4>
+                        <p class="last-minute__slide-date">10-15 ноября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide9">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">ОАЭ <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Дубай</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide last-minute__slide10">
+                    <div class="last-minute__slide-top">
+                        <p class="last-minute__slide-text">9 дней</p>
+                        <p class="last-minute__slide-text">от 25 000 ₽</p>
+                    </div>
+                    <div class="last-minute__slide-bottom">
+                        <h4 class="last-minute__slide-title">Италия <svg xmlns="http://www.w3.org/2000/svg" width="5"
+                                height="5" viewBox="0 0 5 5" fill="none">
+                                <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
+                            </svg> Флоренция</h4>
+                        <p class="last-minute__slide-date">12-18 октября</p>
+                        <a href="#!" class="last-minute__slide-info">узнать подробнее <img
+                                class="last-minute__slide-line" src="./img/slider_one/line-goriz.svg" alt="line">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-minute__pagination-box">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>

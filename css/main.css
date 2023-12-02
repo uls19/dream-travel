@@ -1,5 +1,6 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/rasfire-personal-use");
 * {
   padding: 0px;
   margin: 0px;
@@ -86,6 +87,17 @@ legend {
   display: block;
 }
 
+@font-face {
+  font-family: "Millanova";
+  src: url("./../fonts/millanova.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/millanova.eot?#iefix") format("embedded-opentype"), url("../fonts/millanova.woff2") format("woff2"), url("../fonts/millanova.woff") format("woff"), url("../fonts/millanova.ttf") format("truetype"), url("../fonts/millanova.svg#millanova") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Chandra";
+  src: url("./../fonts/Chandra.ttf") format("truetype"), url("./../fonts/HELLO-CHANDRA-BF64bcefa81499d.woff") format("woff");
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #1C1C1C;
@@ -95,7 +107,7 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1918px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -117,6 +129,32 @@ body {
 .box-bottom {
   height: 660px;
   background-color: rgb(206, 206, 206);
+}
+
+.header-last {
+  color: #1C1C1C;
+  font-size: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .header-last {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+.title-last {
+  color: #1C1C1C;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .title-last {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .header {
@@ -646,4 +684,210 @@ body {
     margin: 12px auto;
     width: 252px;
   }
+}
+
+.last-minute {
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 814px;
+  padding-bottom: 140px;
+}
+@media screen and (max-width: 576px) {
+  .last-minute {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.last-minute__top {
+  margin: 134px auto 0;
+  max-width: 1116px;
+}
+
+.last-minute__header {
+  position: relative;
+}
+.last-minute__header::after {
+  content: "Tours";
+  position: absolute;
+  top: 50px;
+  left: -140px;
+  color: #D4D4D4;
+  font-family: Millanova;
+  font-size: 52px;
+  font-weight: 400;
+  text-transform: none;
+  z-index: 5;
+}
+@media screen and (max-width: 1440px) {
+  .last-minute__header::after {
+    top: -20px;
+    left: 385px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .last-minute__header::after {
+    top: -64px;
+    left: 0px;
+    right: 0;
+    font-size: 36px;
+  }
+}
+
+.swiper {
+  width: 1116px;
+  height: 340px;
+  margin: 62px auto 52px;
+  overflow: visible;
+}
+
+.last-minute__left-box {
+  position: absolute;
+  width: 400px;
+  height: 460px;
+  left: -415px;
+  top: -50px;
+  z-index: 5;
+  background: #FFF;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 256px;
+  height: 340px;
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 67.94%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.last-minute__slide1 {
+  background-image: url(./../img/slider_one/venecia.jpg);
+}
+
+.last-minute__slide2 {
+  background-image: url(./../img/slider_one/turok.jpg);
+}
+
+.last-minute__slide3 {
+  background-image: url(./../../img/slider_one/italia_rim.jpg);
+}
+
+.last-minute__slide4 {
+  background-image: url(./../img/slider_one/dubai.jpg);
+}
+
+.last-minute__slide5 {
+  background-image: url(./../img/slider_one/florencia.jpg);
+}
+
+.last-minute__slide6 {
+  background-image: url(./../img/slider_one/venecia.jpg);
+}
+
+.last-minute__slide7 {
+  background-image: url(./../img/slider_one/turok.jpg);
+}
+
+.last-minute__slide8 {
+  background-image: url(./../../img/slider_one/italia_rim.jpg);
+}
+
+.last-minute__slide9 {
+  background-image: url(./../img/slider_one/dubai.jpg);
+}
+
+.last-minute__slide10 {
+  background-image: url(./../img/slider_one/italia_rim1.jpg);
+}
+
+.last-minute__slide-top {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.last-minute__slide-text {
+  padding: 3px 10px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+}
+
+.last-minute__slide-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.last-minute__slide-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.last-minute__slide-date {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.last-minute__slide-info {
+  margin-right: 12px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.last-minute__slide-line {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.last-minute__pagination-box {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 24px;
+  max-width: 1116px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  top: -225px;
+  border-radius: 32px;
+  width: 44px;
+  height: 44px;
+  background: #FFF;
+  --swiper-theme-color: #1C1C1C;
+  --swiper-navigation-size: 14px;
+  transition: opacity 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-button-prev {
+    left: 0;
+  }
+}
+
+.swiper-pagination-horizontal {
+  --swiper-pagination-progressbar-size: 2px;
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #1C1C1C;
+  background-color: #D4D4D4;
 }/*# sourceMappingURL=main.css.map */
