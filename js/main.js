@@ -59,9 +59,9 @@
   
 //кнопки слайдера
 
-  const swiperEl = document.querySelector(".swiper");
-  const buttonNt = document.querySelector(".swiper-button-next");
-  const buttonPv = document.querySelector(".swiper-button-prev");
+  const swiperEl = document.querySelector(".lastMinute");
+  const buttonNt = document.querySelector(".last-minute__button-next");
+  const buttonPv = document.querySelector(".last-minute__button-prev");
 
   swiperEl.onmouseover = function (e) { 
   buttonNt.style.opacity = '1';
@@ -84,18 +84,67 @@
       }
 
   //слайдер код
-  const swiper = new Swiper(".mySwiper", {
+  const swiperMinute = new Swiper(".lastMinute", {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
 
     pagination: {
-      el: ".swiper-pagination",
+      el: ".last-minute__pagination",
       type: "progressbar",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".last-minute__button-next",
+      prevEl: ".last-minute__button-prev",
     },
 
+  });
+
+  // Swiper-hotels 
+  const swiperHs = document.querySelector(".hotelSwiper");
+  const buttonHn = document.querySelector(".hotels__button-next");
+  const buttonHp = document.querySelector(".hotels__button-prev");
+
+  swiperHs.onmouseover = function (e) { 
+  buttonHn.style.opacity = '1';
+  buttonHp.style.opacity = '1';
+  }
+
+  buttonHn.onmouseover = function (e) {
+    buttonHn.style.opacity = '1';
+    buttonHp.style.opacity = '1';
+  }
+
+  buttonHp.onmouseover = function (e) {
+    buttonHn.style.opacity = '1';
+    buttonHp.style.opacity = '1';
+  }
+
+  swiperHs.onmouseout = function (e) { 
+        buttonHn.style.opacity = '0';
+        buttonHp.style.opacity = '0';
+      }
+
+  const swiperHotel = new Swiper(".hotelSwiper", {
+    effect: 'coverflow',
+    centeredSlides: true,
+    slidesPerView: 'auto',
+   
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -30,
+      depth: 150,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+
+    pagination: {
+      el: ".hotels__pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".hotels__button-next",
+      prevEl: ".hotels__button-prev",
+    }
   });
