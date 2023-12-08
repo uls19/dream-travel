@@ -126,10 +126,10 @@
       }
 
   const swiperHotel = new Swiper(".hotelSwiper", {
+    speed: 500,
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
-   
     coverflowEffect: {
       rotate: 0,
       stretch: -30,
@@ -148,3 +148,30 @@
       prevEl: ".hotels__button-prev",
     }
   });
+
+    // //карточки отелей дополнительно
+    
+    const hotelBtn = document.querySelector('.hotels__button');
+    const hotelEl = document.querySelector('.hotels-items-in');
+    // вызываем элемент и скрываем если клик был за его пределами
+  
+    const toggleItems = function () {
+      hotelEl.classList.toggle("items__show");
+    }
+  
+    hotelBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleItems();
+    });
+  
+    document.addEventListener("click", function (e) {
+      const target = e.target;
+      const hts_menu = target == hotelEl || hotelEl.contains(target);
+      const hts_btnHotel = target == hotelBtn;
+      const menu_is_active = hotelEl.classList.contains("items__show");
+     
+      if (!hts_menu && !hts_btnHotel && menu_is_active) {
+        toggleItems();
+      }
+    });
+  

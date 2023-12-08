@@ -4,10 +4,14 @@
     padding-bottom: 140px;
     background-color: $slide;
 
+    @include mediaDesktop {
+        padding-bottom: 100px; 
+    }
+
     @include mediaMobile {
     padding-left: 14px;
     padding-right: 14px;
-    padding-bottom: 140px;
+    padding-bottom: 0px;
     }
 
 }
@@ -15,6 +19,10 @@
 .hotels__top {
     margin: 169px auto 0;
     text-align: center;
+
+    @include mediaDesktop {
+        margin: 139px auto 0;  
+    }
 
     @include mediaMobile {
         margin-top: 80px;
@@ -27,12 +35,12 @@
     &::after {
         content: "Hotels";
         position: absolute;
-        top: -110px;
+        top: -90px;
         left: 0px;
         right: 0px;
         color: $line;
         font-family: Millanova;
-        font-size: 52px;
+        font-size: 42px;
         font-weight: 400;
         text-transform: none;
         z-index: 5;
@@ -65,11 +73,12 @@
     border-radius: 30px;
     background-size: cover;
     background-position: center;
+    transition: all 0.5s ease-in;
     // -webkit-box-reflect: below 1px linear-gradient(transparent,transparent, #0005);
 }
 
 .hotels-slide + .swiper-slide-active {
-    scale: 1.18;   
+    scale: 1.18; 
 }
 
 .hotels__slide-text, .hotels__item-text {
@@ -116,7 +125,7 @@
     font-weight: 300;
 }
 
-.hotels__slide-line {
+.hotels__slide-line, .hotels__item-line {
 vertical-align: middle;
   margin-left: 10px; 
 }
@@ -170,7 +179,7 @@ vertical-align: middle;
     padding-top: 28px; 
 }
 
-.hotels-items, .hotels-items-in {
+.hotels-items {
     display: none;
     @include mediaMobile {
     display: block;
@@ -191,31 +200,39 @@ vertical-align: middle;
     background-position: center;
     margin-bottom: 12px;
 }
+
+.hotels-items-in {
+display: none;
+}
+
+.items__show {
+    display: block;
+}
 .hotels-item1 { background-image: url(./../img/slider_two/1.jpg);}
   
 .hotels-item2 { background-image: url(./../img/slider_two/2.jpg);}
 
 .hotels-item3 { background-image: url(./../img/slider_two/3.jpg);}
 
-.hotels-item4 { background-image: url(./../img/slider_two/1.jpg);}
+.hotels-item4 { background-image: url(./../img/slider_two/4.jpg);}
 
-.hotels-item5 { background-image: url(./../img/slider_two/2.jpg);}
+.hotels-item5 { background-image: url(./../img/slider_two/1.jpg);}
 
 .hotels-item6 { background-image: url(./../img/slider_two/2.jpg);}
 
 .hotels__item-text {
     font-size: 48px; 
 }
-.hotels__item-bottom {
-}
+
 .hotels__item-title {
     font-size: 20px;
 }
-.hotels__item-info {
-}
-.hotels__item-line {
-}
-.hotels-item2 {
-}
-.hotels-item3 {
+
+.hotels__button {
+    display: none;
+    margin: 32px auto 80px;
+
+    @include mediaMobile {
+        display: block;
+    }
 }
