@@ -1,0 +1,121 @@
+.option {
+    padding-left: 24px;
+    padding-right: 24px;
+    background-image: url(./../img/valeria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 605px;
+
+    @include mediaTablet {
+        height: 469px;  
+    }
+
+    @include mediaMobile {
+        padding-left: 0px;
+        padding-right: 0px;  
+    }
+}
+.option__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 450px auto 20px;
+    padding-left: 64px;
+    padding-right: 64px;
+    height: 133px;
+    border-radius: 30px;
+   background: $white;
+
+   @include mediaTablet {
+    flex-direction: column;
+    row-gap: 14px;
+    max-width: 470px;
+    height: auto;
+    padding: 52px;
+    margin: 60px auto 30px;
+    text-align: center;
+   }
+
+   @include mediaMobile {
+    width: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+   }
+    
+}
+
+.option__title {
+color: $black;
+font-size: 24px;
+font-weight: 400;
+text-transform: uppercase;
+
+@include mediaMobile {
+    font-size: 20px; 
+}
+}
+.option__title-italic {
+    color: $black;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase; 
+
+    @include mediaMobile {
+        font-size: 20px; 
+    }
+}
+.option__text {
+color: $black;
+font-size: 16px;
+font-weight: 300;
+}
+.option__content-form {
+
+    @include mediaTablet {
+        width: 252px;
+    }  
+
+    @include mediaMobile {
+        width: 100%;
+    }
+}
+.option__form {
+    display: flex;
+    flex-direction: column;
+    width: 144px;
+    row-gap: 12px;
+
+    @include mediaTablet {
+        width: 100%;
+    }
+   
+}
+.option__input {
+color: $black-1;
+font-size: 12px;
+font-weight: 400;
+padding-bottom: 5px;
+border-bottom: 1px solid  #848484;
+}
+ 
+.content__button {
+    padding: 12px 28px;
+    background-color: $red;
+    color: $white;
+    border: none;
+    &:hover {
+        background-color: $red-hov;
+    }
+
+    @include mediaTablet {
+        margin: 12px auto;
+        width: 252px;
+    }
+
+    @include mediaMobile {
+        width: 220px;
+    }
+}

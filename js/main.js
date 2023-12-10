@@ -174,4 +174,47 @@
         toggleItems();
       }
     });
+
+
+   // кнопки слайдера comments
+
+  const swiperCl = document.querySelector(".comment");
+  const buttonCnt = document.querySelector(".comment__button-next");
+  const buttonCpv = document.querySelector(".comment__button-prev");
+
+  swiperCl.onmouseover = function (e) { 
+  buttonCnt.style.opacity = '1';
+  buttonCpv.style.opacity = '1';
+  }
+
+  buttonCnt.onmouseover = function (e) {
+    buttonCnt.style.opacity = '1';
+    buttonCpv.style.opacity = '1';
+  }
+
+  buttonCpv.onmouseover = function (e) {
+    buttonCnt.style.opacity = '1';
+    buttonCpv.style.opacity = '1';
+  }
+
+  swiperCl.onmouseout = function (e) { 
+        buttonCnt.style.opacity = '0';
+        buttonCpv.style.opacity = '0';
+      }
+
+    //slider-comments
+    const swiperComment = new Swiper(".comment", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+  
+      pagination: {
+        el: ".comment__pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".comment__button-next",
+        prevEl: ".comment__button-prev",
+      }
+    });
   
