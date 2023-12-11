@@ -614,22 +614,25 @@
                     и наш специалист поможет<br>
                     вам с подбором тура</p>
             </div>
-            <div class="option__content-form">
-                <form class="option__form">
-                    <input class="option__input" type="text" placeholder="Имя">
-                    <input class="option__input" type="tel" id="#!" placeholder="Телефон">
-                </form>
-            </div>
-            <div class="option__content-button">
-                <button class="button content__button" type="button">отправить
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                            stroke-linecap="round" />
-                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    </svg>
-                </button>
-            </div>
+            <form class="option__form" action="#!">
+                <div class="option__form-left">
+                    <input class="option__input" type="text" placeholder="Имя" required>
+                    <div class="option__line"></div>
+                    <input class="option__input" type="tel" id="#!" placeholder="Телефон" required>
+                    <div class="option__line"></div>
+                </div>
+                <div class="option__content-button">
+                    <button class="button content__button" type="submit">отправить
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <section class="container comments none1">
@@ -641,7 +644,7 @@
         <!-- Swiper -->
         <div class="swiper comment">
             <div class="comment__left-box"></div>
-            <div class="swiper-wrapper comment__wrapper"> 
+            <div class="swiper-wrapper comment__wrapper">
                 <div class="swiper-slide comment__slide">
                     <div class="comment__slide-top comment__image1"></div>
                     <div class="comment__slide-stars">

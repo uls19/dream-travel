@@ -27,6 +27,11 @@
     border-radius: 30px;
    background: $white;
 
+   @include mediaDesktopTab {
+    padding-left: 32px;
+    padding-right: 32px;
+   }
+
    @include mediaTablet {
     flex-direction: column;
     row-gap: 14px;
@@ -42,8 +47,7 @@
     padding-left: 40px;
     padding-right: 40px;
 
-   }
-    
+   }   
 }
 
 .option__title {
@@ -67,55 +71,60 @@ text-transform: uppercase;
         font-size: 20px; 
     }
 }
+
 .option__text {
 color: $black;
 font-size: 16px;
 font-weight: 300;
 }
-.option__content-form {
+
+.option__form {
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+
+    @include mediaDesktopTab {
+        column-gap: 32px;
+    }
 
     @include mediaTablet {
-        width: 252px;
-    }  
-
-    @include mediaMobile {
-        width: 100%;
-    }
+        flex-direction: column;
+        row-gap: 16px;
+    } 
 }
-.option__form {
+
+.option__form-left {
     display: flex;
     flex-direction: column;
     width: 144px;
-    row-gap: 12px;
 
     @include mediaTablet {
-        width: 100%;
-    }
-   
+      width: 220px; 
+    } 
 }
+   
 .option__input {
+height: 20px;
 color: $black-1;
 font-size: 12px;
 font-weight: 400;
-padding-bottom: 5px;
-border-bottom: 1px solid  #848484;
 }
- 
+.option__line {
+    height: 1px;
+    background:  #848484; 
+    margin-bottom: 9px;
+}
 .content__button {
-    padding: 12px 28px;
+    padding: 11px 28px;
     background-color: $red;
+    font-size: 16px;
     color: $white;
     border: none;
     &:hover {
         background-color: $red-hov;
     }
 
-    @include mediaTablet {
-        margin: 12px auto;
-        width: 252px;
-    }
-
-    @include mediaMobile {
-        width: 220px;
+   @include mediaTablet {
+    padding: 11px 54px;
     }
 }
