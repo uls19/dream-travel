@@ -217,4 +217,56 @@
         prevEl: ".comment__button-prev",
       }
     });
+
+
+//дополнительно читать
+
+const newsBtn = document.querySelector('.news__button');
+const newsItem1 = document.querySelector('.news-info__item1');
+const newsItem3 = document.querySelector('.news-info__item3');
+const newsItem5= document.querySelector('.news-info__item5');
+const newsItem7 = document.querySelector('.news-info__item7');
+
+// вызываем элемент и скрываем если клик был за его пределами
+
+const toggleNews = function () {
+  newsItem1.classList.toggle("new__show");
+  newsItem3.classList.toggle("new__show");
+  newsItem5.classList.toggle("new__show");
+  newsItem7.classList.toggle("new__show");
+}
+
+  newsBtn.addEventListener ("click", function (e) {
+    const width = window.innerWidth;
+    console.log(width);
+    if(width < 576) { 
+    e.stopPropagation();
+    toggleNews();
+    }
+  });
+ 
+document.addEventListener("click", function (e) {
+  const target = e.target;
+  const news_menu1 = target == newsItem1 || newsItem1.contains(target);
+  const news_menu3 = target == newsItem3 || newsItem3.contains(target);
+  const news_menu5 = target == newsItem5 || newsItem5.contains(target);
+  const news_menu7 = target == newsItem7 || newsItem7.contains(target);
+
+  const news_btnNews = target == newsBtn;
+  const menu_is_active1 = newsItem1.classList.contains("new__show");
+  const menu_is_active3 = newsItem3.classList.contains("new__show");
+  const menu_is_active5 = newsItem5.classList.contains("new__show");
+  const menu_is_active7 = newsItem7.classList.contains("new__show");
+ 
+  if (!news_menu1 && !news_menu3 && !news_menu5 && !news_menu7 && !news_btnNews && menu_is_active1 && menu_is_active3 && menu_is_active5 && menu_is_active7) {
+    toggleNews();
+  }
+});
+
+
+     
+
+   
+
+
   
