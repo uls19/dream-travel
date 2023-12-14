@@ -1739,7 +1739,6 @@ body {
   .news-info__item7 {
     margin-top: 12px;
     width: auto;
-    max-width: 520px;
     background-size: cover;
   }
 }
@@ -1957,13 +1956,13 @@ body {
   .about__content-box {
     max-width: 930px;
     height: auto;
-    row-gap: 32px;
   }
 }
 @media screen and (max-width: 984px) {
   .about__content-box {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    row-gap: 32px;
     max-width: 520px;
   }
 }
@@ -2017,7 +2016,7 @@ body {
 .text-2 {
   grid-column: 3/5;
   grid-row: 3/4;
-  padding-top: 72px;
+  padding-top: 64px;
 }
 @media screen and (max-width: 984px) {
   .text-2 {
@@ -2030,7 +2029,7 @@ body {
 .text-3 {
   grid-column: 5/7;
   grid-row: 3/4;
-  padding-top: 72px;
+  padding-top: 64px;
 }
 @media screen and (max-width: 984px) {
   .text-3 {
