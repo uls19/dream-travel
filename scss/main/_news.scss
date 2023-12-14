@@ -265,6 +265,7 @@ z-index: 5;
 .news__button {
     margin: 32px auto 0;
     display: none;
+    white-space: nowrap;
 
     @include mediaMobile {
       display: block;
