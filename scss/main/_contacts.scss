@@ -12,7 +12,7 @@
     } 
 }
 
-.contacts__line-top {
+.contacts__line {
     height: 1px;
     background: $line;
 
@@ -159,10 +159,4 @@
 
 .content__email {
     text-decoration-line: underline !important;
-}
-
-.contacts__line-bottom {
-    height: 1px;
-    background: $line;
-
 }
