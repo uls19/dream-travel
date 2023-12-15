@@ -1,0 +1,168 @@
+.contacts {
+    max-width: 1116px;
+
+    @include mediaDesktopTab {
+        max-width: 930px;  
+    } 
+
+    @include mediaTablet {
+        max-width: 520px;
+        padding-left: 14px;  
+        padding-right: 14px;
+    } 
+}
+
+.contacts__line-top {
+    height: 1px;
+    background: $line;
+
+}
+
+.contacts-box {
+    display: grid;
+    grid-template-columns: 1fr 363px 1fr;
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    @include mediaDesktopTab {
+        grid-template-columns: 1fr 352px 1fr;
+    }
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacts__social {
+    width: 363px;
+    text-align: center;
+
+    @include mediaDesktopTab {
+        width: auto;   
+    }
+}
+
+.contacts__title {
+    padding-bottom: 27px;
+    color: $black-1;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contacts__title-contact {
+    padding-bottom: 21px;
+}
+
+.contacts__social-line {
+    float: left;
+    width: 1px;
+    height: 63px;
+    margin-top: 20px;
+    background:$line;
+
+    @include mediaTablet {
+    float: none;
+    width: 63px;
+    height: 1px;
+    margin: 32px auto;
+    background: $line;
+    }
+}
+
+.content-icon {
+    display: flex;
+    justify-content: space-between;
+    max-width: 263px;
+    margin: 0 auto;
+
+    @include mediaDesktopTab {
+        column-gap: 15px;
+        row-gap: 12px;
+        max-width: 127px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+.contacts__svg1,
+.contacts__svg2,
+.contacts__svg3,
+.contacts__svg4,
+.contacts__svg5,
+.contacts__svg6 {
+    transition: fill 0.3s ease-in-out;
+}
+
+.contacts__svg1 {
+    fill: #1877F2;
+
+    &:hover {
+        fill: #1362C8;
+    }
+}
+
+.contacts__svg2 {
+    fill: #F00073;
+
+    &:hover {
+        fill: #DA0269;
+    }
+}
+
+.contacts__svg3 {
+    fill: #0088CC;
+
+    &:hover {
+        fill: #0478B1;
+    }
+}
+
+.contacts__svg4 {
+    fill: #25D366;
+
+    &:hover {
+        fill: #24B85B;
+    }
+}
+
+.contacts__svg5 {
+    fill: #FF8800;
+
+    &:hover {
+        fill: #EB7F04;
+    }
+}
+
+.contacts__svg6 {
+    fill: #0077FF;
+
+    &:hover {
+        fill: #036ADF;
+    }
+}
+
+.content__email,
+.content__adress,
+.content__telephone {
+    color: $black-1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    /* 162.5% */
+    text-transform: uppercase;
+
+    @include mediaDesktopTab {
+        font-size: 14px; 
+    }
+}
+
+.content__email {
+    text-decoration-line: underline !important;
+}
+
+.contacts__line-bottom {
+    height: 1px;
+    background: $line;
+
+}
