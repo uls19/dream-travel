@@ -1,0 +1,31 @@
+.info-nav {
+    padding-top: 28px;
+    padding-bottom: 60px;
+    padding-left: calc(50% - 560px);
+    padding-right: calc(50% - 560px);
+
+    @include mediaDesktopTab {
+        padding-left: calc(50% - 476px);
+        padding-right: calc(50% - 456px);
+    }
+@include mediaTablet {
+    padding-left: calc(50% - 352px);
+    padding-right: calc(50% - 356px);
+}
+}
+
+.info-nav__link1 {
+    color: $grey-text;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include mediaTablet {
+        padding-left: 14px;  
+    } 
+}
+
+.info-nav__link2 {
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+}

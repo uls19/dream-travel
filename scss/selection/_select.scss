@@ -1,46 +1,43 @@
 .select {
-    height: 995px;
+    position: relative;
+    height: 482px;
     background: #D9D9D9;
-    background: url(./../img/line-vertical.svg) center 530px no-repeat,
-        url(./../img/select_img.jpg) center no-repeat;
-    background-size: auto, cover;
+    background: url(./../img/select1_img.jpg) center no-repeat;
+    background-size:cover;
+    background-position: center;
+    z-index: 0;
 
-    @include mediaDesktopTab {
-        height: 683px;
-        background-position: center 375px,
-            center;
-        background-size: 16px 68px, cover;
+    &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.22);
+        z-index: -1;
     }
 
     @include mediaTablet {
-        height: 820px;
-        background-position: center 320px,
-            center;
-        background-size: 16px 50px, cover;
+        height: 568px;
     }
 
     @include mediaMobile {
-        height: 687px;
-        background-position: center 200px,
-            center;
-        background-size: 16px 50px, cover;
+        height: 692px; 
     }
-
 }
 
 .select__header {
-    padding-top: 157px;
+    padding-top: 82px;
     color: $white;
     text-align: center;
-    font-size: 128px;
+    font-size: 100px;
     font-weight: 800;
     line-height: 135px;
     /* 105.469% */
     text-transform: uppercase;
 
     @include mediaDesktopTab {
-        padding-top: 108px;
-        font-size: 92px;
+        padding-top: 100px;
+        font-size: 80px;
         line-height: 100px;
         /* 108.696% */
     }
@@ -52,13 +49,15 @@
     }
 
     @include mediaMobile {
+        margin: 0 auto;
+        max-width: 230px;
         padding-top: 56px;
-        font-size: 40px;
+        font-size: 54px;
     }
 }
 
 .select__text {
-    padding-top: 38px;
+    padding-top: 0px;
     color: $white;
     text-align: center;
     font-size: 28px;
@@ -66,17 +65,19 @@
     text-transform: uppercase;
 
     @include mediaDesktopTab {
-        padding-top: 21px;
+        font-size: 26px;
     }
 
     @include mediaTablet {
         padding-top: 14px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     @include mediaMobile {
+        margin: 0 auto;
+        max-width: 260px;
         padding-top: 10px;
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
@@ -85,7 +86,7 @@
     grid-template-columns: repeat(3, 154px) 172px 1fr 168px;
     grid-template-areas: "item1 item2 item3 item4 item5 button";
     align-items: center;
-    margin-top: 182px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -95,7 +96,7 @@
     background-color: $white;
 
     @include mediaDesktopTab {
-        margin-top: 156px;
+        margin-top: 60px;
     }
 
     @include mediaTablet {
@@ -107,12 +108,13 @@
             "item3 item3"
             "item4 item5"
             "button button";
-        margin-top: 110px;
+        margin-top: 20px;
         padding: 0px 24px 5px;
         width: 470px;
         height: 320px;
     }
     @include mediaMobile {
+        margin-top: 44px;
         width: 300px;
     }
 }
@@ -214,4 +216,3 @@
         width: 252px;
     }
 }
-

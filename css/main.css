@@ -627,7 +627,7 @@ body {
 @media screen and (max-width: 576px) {
   .select {
     height: 687px;
-    background-position: center 190px, center;
+    background-position: center 200px, center;
     background-size: 16px 50px, cover;
   }
 }
@@ -683,7 +683,7 @@ body {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 576px) {
   .select__text {
     padding-top: 10px;
     font-size: 16px;
