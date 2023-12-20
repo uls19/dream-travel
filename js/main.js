@@ -57,6 +57,55 @@
   });
 
   
+   //application_window
+  const appOut = document.querySelector('.application__out');
+  const appEl = document.querySelector('.application');
+  const appInt = document.querySelector('.header__button');
+  const appBefore = document.querySelector('.top-before')
+
+  // // вызываем элемент и скрываем если клик был за его пределами
+
+  const toggleApp = function () {
+    appEl.classList.toggle("app__show");
+    appBefore.classList.toggle("bgd__show");
+    
+    }
+  
+
+ appInt.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleApp();
+  });
+
+  document.addEventListener("click", function (e) {
+    const target = e.target;
+    const its_app = target == appEl || appEl.contains(target);
+    const its_btnApp = target == appInt;
+    const pop_is_active = appEl.classList.contains("app__show");
+
+    if (!its_app && !its_btnApp && pop_is_active) {
+      toggleApp();
+    }
+  });
+
+  //скрываем элемент кнопкой
+
+  appOut.addEventListener("click", function () {
+    appEl.classList.toggle("app__show");
+    appBefore.classList.toggle("bgd__show");
+  });
+
+  //button pop-up mobile
+    const popupBtn = document.querySelector('.pop-up__button');
+
+    popupBtn.addEventListener("click", function (e) {
+      popEl.classList.toggle("popup__show");
+      e.stopPropagation();
+      toggleApp();
+    });
+
+
+  
 //кнопки слайдера
 
   const swiperEl = document.querySelector(".lastMinute");
@@ -126,7 +175,7 @@
       }
 
   const swiperHotel = new Swiper(".hotelSwiper", {
-    speed: 500,
+    // speed: 300,
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',

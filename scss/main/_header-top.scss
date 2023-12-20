@@ -22,8 +22,9 @@
         padding-left: calc(50% - 352px);
         padding-right: calc(50% - 356px);
     }
+
     @include mediaMobile {
-      height: 68px;
+        height: 68px;
     }
 }
 
@@ -42,14 +43,14 @@
     }
 
     @include mediaMobile {
-        padding-left: 30px; 
+        padding-left: 30px;
     }
 }
 
 .header__logo-img {
     @include mediaMobile {
-        max-width: 76%; 
-    } 
+        max-width: 76%;
+    }
 }
 
 .header__nav-ul {
@@ -127,10 +128,13 @@
     @include mediaTablet {
         padding-right: 15px;
     }
+
     @include mediaMobile {
         padding-right: 30px;
     }
 }
-.header__nav-burger > svg {
+
+.header__nav-burger>svg {
     max-width: none;
 }
+

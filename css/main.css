@@ -468,6 +468,142 @@ body {
   gap: 10px;
 }
 
+.top-before {
+  position: absolute;
+  display: none;
+  height: 1080px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+@media screen and (max-width: 1248px) {
+  .top-before {
+    height: 768px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .top-before {
+    height: 904px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .top-before {
+    height: 756px;
+  }
+}
+
+.bgd__show {
+  display: block;
+}
+
+.application {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 52px 40px;
+  top: 180px;
+  width: 300px;
+  height: 366px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #FFF;
+}
+
+.app__show {
+  display: flex;
+}
+
+.application__out {
+  position: absolute;
+  background-image: url(./../img/out.svg);
+  top: 18px;
+  right: 18px;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+.application__out:hover {
+  cursor: pointer;
+}
+
+.application__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .application__title {
+    font-size: 20px;
+  }
+}
+
+.application__title-italic {
+  color: #000;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .application__title-italic {
+    font-size: 20px;
+  }
+}
+
+.application__content-text {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.application__text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.application__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.application__form-left {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.application__input {
+  height: 20px;
+  color: #1C1C1C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.application__line {
+  height: 1px;
+  background: #848484;
+  margin-bottom: 9px;
+}
+
+.button__application {
+  padding: 11px 28px;
+  background-color: #EC1C24;
+  font-size: 16px;
+  color: #FFF;
+  border: none;
+}
+.button__application:hover {
+  background-color: #DD1A21;
+}
+
 .select {
   height: 995px;
   background: #D9D9D9;
