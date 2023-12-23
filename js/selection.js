@@ -1,3 +1,12 @@
+//загрузка
+const mask = document.querySelector('.mask');
+window.addEventListener('load', () => {
+  mask.classList.add('hide');
+  setTimeout(() => {
+mask.remove();
+  }, 600);
+  });
+
 // //menu
 const burgerEl = document.querySelector('.header__nav-burger');
 const menuEl = document.querySelector('.header__menu');
@@ -102,4 +111,31 @@ appOut.addEventListener("click", function () {
     popEl.classList.toggle("popup__show");
     e.stopPropagation();
     toggleApp();
+  });
+
+  //variants-popup-block
+  const varBtn = document.querySelector('.variants__select-link');
+  const varSelect = document.querySelector('.variants__select-popup');
+    
+  // // вызываем элемент и скрываем если клик был за его пределами
+  
+  const toggleVar = function () {
+    varSelect.classList.toggle("var__show");
+  
+  }
+  
+  varBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleVar();
+  });
+  
+  document.addEventListener("click", function (e) {
+    const target = e.target;
+    const its_var = target == varSelect || varSelect.contains(target);
+    const its_varBtn = target == varBtn;
+    const pop_is_active = varSelect.classList.contains("var__show");
+  
+    if (!its_var && !its_varBtn && pop_is_active) {
+      toggleVar();
+    }
   });

@@ -1,3 +1,12 @@
+//загрузка
+const mask = document.querySelector('.mask');
+window.addEventListener('load', () => {
+  mask.classList.add('hide');
+  setTimeout(() => {
+mask.remove();
+  }, 600);
+  });
+
 // //menu
   const burgerEl = document.querySelector('.header__nav-burger');
   const menuEl = document.querySelector('.header__menu');
