@@ -55,6 +55,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 11px;
 
     @include mediaTablet {
         padding-left: 14px;
@@ -82,7 +83,7 @@
     display: none;
 
     @include mediaTabletMob {
-    top: 38px;
+        top: 38px;
     }
 }
 
@@ -97,7 +98,7 @@
     padding-right: 30px;
     font-weight: 400;
     line-height: 44px;
-    
+
     &:hover {
         cursor: pointer;
         color: $grey;
@@ -111,19 +112,22 @@
 }
 
 .variants__select-title {
+    padding-left: 29px;
     color: $black-1;
     font-size: 16px;
     font-weight: 300;
     white-space: nowrap;
+    background-image: url('./../img/sort.svg');
+    background-position: left center; //x y
+    background-size: 22px;
+    background-repeat: no-repeat;
+
 
     @include mediaMobile {
         font-size: 14px;
     }
 }
 
-.variants__select-title>svg {
-    vertical-align: middle;
-}
 
 .variants__select-link {
     color: $black-1;
@@ -147,34 +151,364 @@
 }
 
 .variants__right-link {
+    padding-left: 29px;
     color: $black-1;
     font-size: 16px;
     font-weight: 300;
     white-space: nowrap;
+    background-image: url('./../img/global-search.svg');
+    background-position: left center; //x y
+    background-size: 22px;
+    background-repeat: no-repeat;
 
-}
 
-.variants__right-link>svg {
-    vertical-align: middle;
 }
 
 .variants__right-button {
-    padding: 10px 28px;
+    padding: 10px 28px 10px 56px;
     color: $black-1;
     font-size: 16px;
     font-weight: 500;
     white-space: nowrap;
     text-transform: none;
+    background-image: url('./../img/setting.svg');
+    background-color: $white;
+    background-position: left 28px center; //x y
+    background-size: 22px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 1px solid #6A6A6A;
+    color: #000;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $slide;
+        
+    }
+
 
     @include mediaMobile {
+        padding: 10px 0px 10px 56px;
         transition: none;
         border: none;
-        &:hover {
-            background: $white;
-        }
     }
 }
 
-.variants__right-button>svg {
-    vertical-align: middle;
+.variants__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 384px 1fr 1fr 224px;
+    grid-template-rows: 1fr 1fr;
+    height: 280px;
+    border-radius: 30px;
+    border: 1.5px solid $line;
+    background-image: url('./../img/variants/image1.jpg');
+    background-position: left center; //x y
+    background-size: 384px 280px;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+
+    @include mediaDesktopTab {
+        grid-template-columns: 280px 1fr 1fr 224px;
+        background-position: left -104px center; //x y
+    }
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 130px 32px 166px 1fr ;
+        width: 384px;
+        background-size: 384px 280px;
+        margin-left:  auto;
+        margin-right: auto;
+        margin-top: 28px;
+        height: auto;
+        background-position: center top; //x y
+    }
+
+    @include mediaMobile {
+        width: 300px;
+        margin-bottom: 22px;
+    }
+
+
+}
+
+.variants__item-image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    @include mediaTablet {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+.variants__item-title {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 30px;
+    padding-top: 24px;
+
+    @include mediaTablet {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 20px;
+        padding-top: 20px;
+        background: white;
+
+    }
+}
+
+.variants__text {
+    color: $black-1;
+    font-size: 16px;
+    font-weight: 300;
+
+    @include mediaTablet {
+        font-size: 14px; 
+    }
+}
+
+.variants__text-link:hover {
+    text-decoration: underline;
+}
+
+.variants__header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $black-1;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include mediaTablet {
+        padding-top: 0px;
+        padding-bottom: 0px; 
+        font-size: 18px; 
+    }
+
+    &:hover {
+        color: $grey;
+        cursor: default;
+    }
+
+}
+
+.variants__comments {
+    display: flex;
+    padding-top: 23px;
+    align-items: center;
+    gap: 10px;
+
+    @include mediaTablet {
+        padding-top: 20px;
+       
+    }
+
+}
+
+.variants__comment-number {
+    width: 40px;
+    padding: 4px 10px 3px;
+    border-radius: 30px;
+    background: #463998;
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.variants__comment-text {
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include mediaTablet {
+        padding-top: 0px;
+       
+    }
+
+}
+
+.variants__item-left {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 30px;
+    padding-top: 56px;
+
+    @include mediaDesktopTab {
+        padding-top: 36px;
+    }
+
+    @include mediaTablet {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+
+}
+}
+
+.variants__item-calendar {
+    padding: 2px 0px 2px 27px;
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+    background-image: url('./../img/variants/calendar.svg');
+    background-position: left center; //x y
+    background-size: 22px;
+    background-repeat: no-repeat;
+
+    @include mediaDesktopTab {
+        width: 140px;
+        background-position: left top; //x y
+    }
+
+}
+
+.variants__item-saloon {
+    padding: 14px 0px 14px 27px;
+    background-image: url('./../img/variants/Frame.svg');
+    background-position: left center; //x y
+    background-size: 22px;
+    background-repeat: no-repeat;
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include mediaTablet {
+        padding: 0px 0px 14px 27px;
+        background-position: left top; //x y
+    }
+}
+       
+
+.variants__item-right {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding-right: 30px;
+
+    @include mediaTablet {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding-top: 20px;
+        padding-left:20px ;
+    }
+}
+
+.variants__item-info {
+    padding-left: 25px;
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 13px;
+    background-image: url('./../img/variants/Check.svg');
+    background-position: left top; //x y
+    background-size: 18px;
+    background-repeat: no-repeat;
+
+}
+
+.variants__item-year {
+    padding-top: 24px;
+    padding-right: 28px;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    text-align: right;
+
+    @include mediaTablet {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding-right: 0px;
+        padding-top: 10px;
+       
+    }
+}
+
+.variants__year-link {
+    position: absolute;
+    white-space: nowrap;
+    top:22px;
+    right: 28px;
+    padding: 4px 18px;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 30px;
+    border: 1.5px solid $line;
+    background-color: $white;
+
+    @include mediaTablet {
+        top:16px;
+        right: 16px;
+    }
+
+    &:hover {
+        background-color: $slide;
+    }
+
+    
+
+}
+
+.variants__item-detailed {
+    padding-top: 142px;
+    text-align: right;
+
+    @include mediaTablet {
+        position: relative;
+        padding-top: 0px;
+        text-align: center;
+        
+    }
+}
+
+.variants__item-price {
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+.variants__item-price>span {
+    color: $black-1;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.variants__button {
+    padding: 12px 34px;
+    background-color: #EC1C24;
+    color: #FFF;
+    border: none;
+    grid-area: button;
+
+    @include mediaTablet {
+        display: none;
+        
+    }
+
+    &:hover {
+        background-color: $red-hov;
+    }
+}
+
+.variants__line {
+    width: 232px;
+    height: 1px;
+    background: $line;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+
+    @include mediaTablet {
+        position: absolute;
+        transform: rotate(0deg);
+        width: 260px;
+        top:-20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 }
