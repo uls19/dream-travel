@@ -8,13 +8,6 @@
     background: rgba(0, 0, 0, 0.30);
     z-index: 5;
 
-    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-    transition: 0.3s; /*Скорость перехода состояния элемента*/
-    animation: show 0.8s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-    animation-delay: 0.42; /* Задержка перед началом */
-
-
     @include mediaDesktopTab {
         height: 768px; 
     }
@@ -30,14 +23,6 @@
 
 .bgd__show {
     display: block;
-    @keyframes show{
-        0%{
-        opacity:0;
-        }
-        100% {
-        opacity:1;
-        }
-        }
 }
 .application{
     position: absolute;
