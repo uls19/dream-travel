@@ -1143,6 +1143,16 @@ body {
 .item-image4 {
   background-image: url("./../img/variants/image4.jpg");
 }
+.item-image4::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("./../img/variants/fire.png");
+  transform: translate(20px, 20px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .item-image5 {
   background-image: url("./../img/variants/image5.jpg");
@@ -1158,6 +1168,16 @@ body {
 
 .item-image8 {
   background-image: url("./../img/variants/image8.jpg");
+}
+.item-image8::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("./../img/variants/fire.png");
+  transform: translate(20px, 20px);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .variants__item-image {

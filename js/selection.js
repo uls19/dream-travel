@@ -139,3 +139,15 @@ appOut.addEventListener("click", function () {
       toggleVar();
     }
   });
+
+//swiper-slider
+  var swiper = new Swiper(".myVariants", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

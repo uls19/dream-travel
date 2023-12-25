@@ -198,6 +198,13 @@
     }
 }
 
+//swiper-slider
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+//   }
+
 .variants__item {
     position: relative;
     display: grid;
@@ -251,6 +258,17 @@
 
 .item-image4 {
     background-image: url('./../img/variants/image4.jpg');
+
+    &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./../img/variants/fire.png');
+    transform: translate(20px, 20px); //x y
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 }
 
 .item-image5 {
@@ -267,6 +285,17 @@
 
 .item-image8 {
     background-image: url('./../img/variants/image8.jpg');
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-image: url('./../img/variants/fire.png');
+        transform: translate(20px, 20px); //x y
+        background-repeat: no-repeat;
+        background-position: center;
+        }
 }
 
 .variants__item-image {
