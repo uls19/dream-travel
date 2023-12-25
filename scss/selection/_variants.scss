@@ -184,7 +184,7 @@
 
     &:hover {
         background-color: $slide;
-        
+
     }
 
 
@@ -192,36 +192,39 @@
         padding: 10px 0px 10px 56px;
         transition: none;
         border: none;
+
+        &:hover {
+            background-color: $white;
+
+        }
     }
 }
 
 .variants__item {
     position: relative;
     display: grid;
-    grid-template-columns: 384px 1fr 1fr 224px;
+    grid-template-columns: 384px 318px 1fr 224px;
     grid-template-rows: 1fr 1fr;
     height: 280px;
     border-radius: 30px;
     border: 1.5px solid $line;
-    background-image: url('./../img/variants/image1.jpg');
     background-position: left center; //x y
     background-size: 384px 280px;
     background-repeat: no-repeat;
     margin-bottom: 28px;
 
     @include mediaDesktopTab {
-        grid-template-columns: 280px 1fr 1fr 224px;
+        grid-template-columns: 280px 230px 1fr 224px;
         background-position: left -104px center; //x y
     }
 
     @include mediaTablet {
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 130px 32px 166px 1fr ;
+        grid-template-rows: 200px auto auto auto auto;
         width: 384px;
         background-size: 384px 280px;
-        margin-left:  auto;
+        margin-left: auto;
         margin-right: auto;
-        margin-top: 28px;
         height: auto;
         background-position: center top; //x y
     }
@@ -232,6 +235,40 @@
     }
 
 
+}
+
+.item-image1 {
+    background-image: url('./../img/variants/image1.jpg');
+
+}
+
+.item-image2 {
+    background-image: url('./../img/variants/image2.jpg');
+
+}
+
+.item-image3 {
+    background-image: url('./../img/variants/image3.jpg');
+}
+
+.item-image4 {
+    background-image: url('./../img/variants/image4.jpg');
+}
+
+.item-image5 {
+    background-image: url('./../img/variants/image5.jpg');
+}
+
+.item-image6 {
+    background-image: url('./../img/variants/image6.jpg');
+}
+
+.item-image7 {
+    background-image: url('./../img/variants/image7.jpg');
+}
+
+.item-image8 {
+    background-image: url('./../img/variants/image8.jpg');
 }
 
 .variants__item-image {
@@ -266,7 +303,7 @@
     font-weight: 300;
 
     @include mediaTablet {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
 
@@ -283,8 +320,8 @@
 
     @include mediaTablet {
         padding-top: 0px;
-        padding-bottom: 0px; 
-        font-size: 18px; 
+        padding-bottom: 0px;
+        font-size: 18px;
     }
 
     &:hover {
@@ -292,6 +329,10 @@
         cursor: default;
     }
 
+}
+
+.header-card {
+    padding-left: 0;
 }
 
 .variants__comments {
@@ -302,7 +343,7 @@
 
     @include mediaTablet {
         padding-top: 20px;
-       
+
     }
 
 }
@@ -325,7 +366,7 @@
 
     @include mediaTablet {
         padding-top: 0px;
-       
+
     }
 
 }
@@ -343,13 +384,19 @@
     @include mediaTablet {
         display: flex;
         grid-column: 1/2;
+        column-gap: 6px;
         grid-row: 3/4;
-        padding-top: 0px;
+        padding-top: 6px;
         padding-left: 20px;
         padding-right: 20px;
         justify-content: space-between;
 
-}
+    }
+
+    @include mediaMobile {
+        padding-right: 16px;
+
+    }
 }
 
 .variants__item-calendar {
@@ -363,8 +410,12 @@
     background-repeat: no-repeat;
 
     @include mediaDesktopTab {
-        width: 140px;
+        width: 182px;
         background-position: left top; //x y
+    }
+
+    @include mediaMobile {
+        width: 150px;
     }
 
 }
@@ -381,21 +432,20 @@
 
     @include mediaTablet {
         padding: 0px 0px 14px 27px;
-        background-position: left top; //x y
+        background-position: left 2px top; //x y
     }
 }
-       
+
 
 .variants__item-right {
     grid-column: 3/4;
     grid-row: 2/3;
-    padding-right: 30px;
 
     @include mediaTablet {
         grid-column: 1/2;
         grid-row: 4/5;
         padding-top: 20px;
-        padding-left:20px ;
+        padding-left: 20px;
     }
 }
 
@@ -424,14 +474,14 @@
         grid-row: 5/6;
         padding-right: 0px;
         padding-top: 10px;
-       
+
     }
 }
 
 .variants__year-link {
     position: absolute;
     white-space: nowrap;
-    top:22px;
+    top: 22px;
     right: 28px;
     padding: 4px 18px;
     color: $grey;
@@ -442,7 +492,7 @@
     background-color: $white;
 
     @include mediaTablet {
-        top:16px;
+        top: 16px;
         right: 16px;
     }
 
@@ -450,7 +500,7 @@
         background-color: $slide;
     }
 
-    
+
 
 }
 
@@ -462,7 +512,7 @@
         position: relative;
         padding-top: 0px;
         text-align: center;
-        
+
     }
 }
 
@@ -471,6 +521,11 @@
     font-size: 14px;
     font-weight: 300;
     padding-bottom: 16px;
+
+    @include mediaTablet {
+        padding-top: 16px;
+    }
+
 }
 
 .variants__item-price>span {
@@ -488,7 +543,7 @@
 
     @include mediaTablet {
         display: none;
-        
+
     }
 
     &:hover {
@@ -507,7 +562,7 @@
         position: absolute;
         transform: rotate(0deg);
         width: 260px;
-        top:-20px;
+        top: -4px;
         left: 0;
         right: 0;
         margin: 0 auto;
