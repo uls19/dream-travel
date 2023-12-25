@@ -189,14 +189,12 @@
 
 
     @include mediaMobile {
-        padding: 10px 0px 10px 56px;
+        padding: 10px 0px 10px 26px;
+        background-position: left center; //x y
         transition: none;
+        border-radius: 0px;
         border: none;
 
-        &:hover {
-            background-color: $white;
-
-        }
     }
 }
 

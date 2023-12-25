@@ -1082,12 +1082,11 @@ body {
 }
 @media screen and (max-width: 576px) {
   .variants__right-button {
-    padding: 10px 0px 10px 56px;
+    padding: 10px 0px 10px 26px;
+    background-position: left center;
     transition: none;
+    border-radius: 0px;
     border: none;
-  }
-  .variants__right-button:hover {
-    background-color: #FFF;
   }
 }
 
