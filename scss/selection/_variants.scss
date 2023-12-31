@@ -595,3 +595,84 @@
         margin: 0 auto;
     }
 }
+
+.myVariants {
+    padding-bottom: 52px;
+}
+
+.swiper-bottom-line {
+    margin-top: 36px;
+    height: 1px;
+    max-width: 1120px;
+    background: $line;
+}
+
+.swiper-bottom-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    margin: 18px auto 0;
+
+}
+.swiper__button {
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    border-radius: 15px;
+    border: 1px solid $line;
+    background-image: url(./../img/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+   
+
+    &:hover {
+        background-color: $slide;
+        cursor: pointer;
+    }
+    
+}
+
+.swiper-pagination {
+    position: static;
+    width: 55px;
+    color: #FFF;
+}
+
+.swiper-pagination-current {
+    color:$black-1;
+}
+.swiper-pagination-current::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 24px;
+    left: 2px;
+    bottom: -2px;
+    border-radius: 30px;
+    border: 1px solid $line;
+    background-position: center;
+    z-index: 10;
+
+}
+
+.swiper-pagination-current::after {
+    content: " из 140";
+    position: absolute;
+    left: 33px;
+    height: 24px;
+    width: 70px;
+    background-color: $white;
+    color: $grey;
+    font-family: Roboto;
+    font-size: 14px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: normal;
+   
+ 
+}
+.swiper-pagination-total {
+    display: none;
+}

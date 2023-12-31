@@ -142,12 +142,15 @@ appOut.addEventListener("click", function () {
 
 //swiper-slider
   var swiper = new Swiper(".myVariants", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
     },
   });
