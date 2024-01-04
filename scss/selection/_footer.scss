@@ -1,16 +1,16 @@
 .footer {
-    margin-top: 140px;
+    margin-top: 48px;
     background-image: url(./../img/willian2.jpg);
     background-size: auto 454px;
     background-repeat: no-repeat;
     background-position: top center;
 
     @include mediaDesktopTab {
-        margin-top: 100px;
+        margin-top: 38px;
     }
 
     @include mediaMobile {
-        margin-top: 80px;
+        margin-top: 28px;
         padding-left: 0px;
         padding-right: 0px;
     }

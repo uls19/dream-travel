@@ -140,6 +140,34 @@ appOut.addEventListener("click", function () {
     }
   });
 
+ // кнопки слайдера 
+
+ const swiperVr = document.querySelector(".swiper-wrapper");
+ const buttonVrn = document.querySelector(".variants__button-next");
+ const buttonVrp = document.querySelector(".variants__button-prev");
+
+ swiperVr.onmouseover = function (e) { 
+ buttonVrn.style.opacity = '1';
+ buttonVrp.style.opacity = '1';
+ }
+
+ buttonVrn.onmouseover = function (e) {
+   buttonVrn.style.opacity = '1';
+   buttonVrp.style.opacity = '1';
+ }
+
+ buttonVrp.onmouseover = function (e) {
+  buttonVrn.style.opacity = '1';
+  buttonVrp.style.opacity = '1';
+ }
+
+ swiperVr.onmouseout = function (e) { 
+       buttonVrn.style.opacity = '0';
+       buttonVrp.style.opacity = '0';
+     }
+
+
+
 //swiper-slider
   var swiper = new Swiper(".myVariants", {
     slidesPerView: 1,
@@ -151,6 +179,6 @@ appOut.addEventListener("click", function () {
     },
     navigation: {
       nextEl: ".button-next",
-      prevEl: ".button-prev",
+      prevEl: ".variants__button-prev",
     },
   });

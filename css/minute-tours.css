@@ -639,8 +639,8 @@ body {
   position: relative;
   height: 482px;
   background: #D9D9D9;
-  background: url(./../img/select1_img.jpg) center no-repeat;
-  background-size: cover;
+  background: url(./../img/minute-tours/daniela.jpg) center no-repeat;
+  background-size: auto 106%;
   background-position: center;
   z-index: 0;
 }
@@ -654,7 +654,7 @@ body {
 }
 @media screen and (max-width: 984px) {
   .select {
-    height: 568px;
+    height: 608px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -691,7 +691,7 @@ body {
 @media screen and (max-width: 576px) {
   .select__header {
     margin: 0 auto;
-    max-width: 230px;
+    max-width: 270px;
     padding-top: 56px;
     font-size: 54px;
   }
@@ -719,7 +719,7 @@ body {
 @media screen and (max-width: 576px) {
   .select__text {
     margin: 0 auto;
-    max-width: 260px;
+    width: 300px;
     padding-top: 10px;
     font-size: 24px;
   }
@@ -730,7 +730,7 @@ body {
   grid-template-columns: repeat(3, 154px) 172px 1fr 168px;
   grid-template-areas: "item1 item2 item3 item4 item5 button";
   align-items: center;
-  margin-top: 80px;
+  margin-top: 47px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -756,7 +756,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .select__menu {
-    margin-top: 44px;
+    margin-top: 30px;
     width: 300px;
   }
 }
@@ -1128,6 +1128,24 @@ body {
   }
 }
 
+.item-image1::before,
+.item-image2::before,
+.item-image3::before,
+.item-image4::before,
+.item-image5::before,
+.item-image6::before,
+.item-image7::before,
+.item-image8::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("./../img/variants/fire.png");
+  transform: translate(20px, 20px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .item-image1 {
   background-image: url("./../img/variants/image1.jpg");
 }
@@ -1142,16 +1160,6 @@ body {
 
 .item-image4 {
   background-image: url("./../img/variants/image4.jpg");
-}
-.item-image4::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("./../img/variants/fire.png");
-  transform: translate(20px, 20px);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .item-image5 {
@@ -1168,16 +1176,6 @@ body {
 
 .item-image8 {
   background-image: url("./../img/variants/image8.jpg");
-}
-.item-image8::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-image: url("./../img/variants/fire.png");
-  transform: translate(20px, 20px);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .variants__item-image {
@@ -1574,7 +1572,7 @@ body {
 }
 
 .swiper-pagination-current::after {
-  content: " из 140";
+  content: " из 52";
   position: absolute;
   left: 33px;
   height: 24px;
@@ -1981,4 +1979,4 @@ body {
   padding-bottom: 42px;
   font-size: 12px;
   font-weight: 300;
-}/*# sourceMappingURL=selection.css.map */
+}/*# sourceMappingURL=minute-tours.css.map */

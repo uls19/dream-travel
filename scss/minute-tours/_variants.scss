@@ -242,6 +242,27 @@
 
 }
 
+.item-image1,
+.item-image2,
+.item-image3,
+.item-image4,
+.item-image5,
+.item-image6,
+.item-image7,
+.item-image8 {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-image: url('./../img/variants/fire.png');
+        transform: translate(20px, 20px); //x y
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+}
+
+
 .item-image1 {
     background-image: url('./../img/variants/image1.jpg');
 
@@ -258,17 +279,6 @@
 
 .item-image4 {
     background-image: url('./../img/variants/image4.jpg');
-
-    &::before {
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-image: url('./../img/variants/fire.png');
-    transform: translate(20px, 20px); //x y
-    background-repeat: no-repeat;
-    background-position: center;
-    }
 }
 
 .item-image5 {
@@ -285,17 +295,6 @@
 
 .item-image8 {
     background-image: url('./../img/variants/image8.jpg');
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        background-image: url('./../img/variants/fire.png');
-        transform: translate(20px, 20px); //x y
-        background-repeat: no-repeat;
-        background-position: center;
-        }
 }
 
 .variants__item-image {
@@ -698,7 +697,7 @@
 }
 
 .swiper-pagination-current::after {
-    content: " из 140";
+    content: " из 52";
     position: absolute;
     left: 33px;
     height: 24px;

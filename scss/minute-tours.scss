@@ -1,0 +1,19 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+//main
+@import "./main/header-top";
+@import "./main/header-menu";
+@import "./main/pop-up";
+
+
+//selection
+@import "./selection/top-before";
+@import "./minute-tours/select";
+@import "./selection/info-nav";
+@import "./minute-tours/variants";
+
+//footer
+@import "./selection/footer";

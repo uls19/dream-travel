@@ -1070,8 +1070,8 @@ body {
   opacity: 0;
   top: -225px;
   border-radius: 32px;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   background: #FFF;
   --swiper-theme-color: #1C1C1C;
   --swiper-navigation-size: 14px;
@@ -1302,8 +1302,8 @@ body {
   opacity: 0;
   top: -260px;
   border-radius: 32px;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   background: #FFF;
   --swiper-theme-color: #1C1C1C;
   --swiper-navigation-size: 14px;
@@ -1714,8 +1714,8 @@ body {
   opacity: 0;
   top: -270px;
   border-radius: 32px;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   background: #FFF;
   --swiper-theme-color: #1C1C1C;
   --swiper-navigation-size: 14px;
