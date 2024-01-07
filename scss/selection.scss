@@ -11,10 +11,13 @@
 
 
 //selection
+@import "./main/top-before";
 @import "./selection/top-before";
+@import "./main/select";
 @import "./selection/select";
 @import "./selection/info-nav";
 @import "./selection/variants";
 
 //footer
+@import "./main/footer";
 @import "./selection/footer";

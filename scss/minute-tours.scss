@@ -9,11 +9,15 @@
 @import "./main/pop-up";
 
 
-//selection
+//minute-tours
+@import "./main/top-before";
 @import "./selection/top-before";
+@import "./main/select";
 @import "./minute-tours/select";
 @import "./selection/info-nav";
+@import "./selection/variants";
 @import "./minute-tours/variants";
 
 //footer
+@import "./main/footer";
 @import "./selection/footer";
