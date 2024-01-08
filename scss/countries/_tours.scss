@@ -1,0 +1,255 @@
+.tours {
+    padding-left: calc(50% - 560px);
+    padding-right: calc(50% - 560px);
+    overflow-x: hidden;
+    min-height: 500px;
+
+    @include mediaDesktopTab {
+        padding-left: calc(50% - 476px);
+        padding-right: calc(50% - 456px);
+    }
+
+    @include mediaTablet {
+        padding-left: calc(50% - 352px);
+        padding-right: calc(50% - 356px);
+        overflow-x: hidden;
+    }
+
+}
+
+.tours__header {
+    color: $black-1;
+    font-weight: 600;
+
+    @include mediaTablet {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 14px;
+        padding-right: 14px;
+
+    }
+
+    @include mediaTabletMob {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    @include mediaMobile {
+        text-align: left;
+    }
+}
+
+.tours-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(22, 36px);
+    column-gap: 44px;
+    margin-top: 46px;
+    padding-left: 62px;
+
+    @include mediaDesktopTab {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(32, 36px); 
+
+    }
+
+    @include mediaTabletMob {
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(64, 36px); 
+        justify-items:center;
+    }
+}
+
+.letterA,
+.letterB,
+.letterV,
+.letterI,
+.letterK,
+.letterH,
+.letterP,
+.letterS,
+.letterT {
+    position: relative;
+    width: 320px;
+    // padding-bottom: 52px;
+
+    &::before {
+        position: absolute;
+        left: -60px;
+        top: -18px;
+        color: $line;
+        text-align: right;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 84px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.letterA {
+    grid-column: 1/2;
+    grid-row: 1/9;
+&::before {
+    content: "A";
+}
+}
+
+.letterB {
+    grid-column: 1/2;
+    grid-row: 10/14;
+    &::before {
+    content: "Б";
+}
+}
+
+.letterV{
+    grid-column: 1/2;
+    grid-row: 15/21;
+
+&::before {
+    content: "B";
+}
+}
+
+.letterI {
+    grid-column: 2/3;
+    grid-row: 1/7;
+
+    @include mediaDesktopTab {
+        grid-column: 1/2;
+        grid-row: 22/28;
+    }
+&::before {
+    content: "И";
+}
+
+}
+
+.letterK {
+    grid-column: 2/3;
+    grid-row: 8/18;
+
+    @include mediaDesktopTab {
+        grid-column: 2/3;
+        grid-row: 1/11;
+    }
+
+    @include mediaTabletMob {
+        grid-column: 1/2;
+        grid-row: 34/44;
+    }
+
+&::before {
+    content: "K";
+}
+}
+
+.letterH {
+    grid-column: 2/3;
+    grid-row: 19/23;
+
+    @include mediaDesktopTab {
+        grid-column: 1/2;
+        grid-row: 29/33;
+    }
+
+&::before {
+    content: "H";
+}
+}
+
+.letterP {
+    grid-column: 3/4;
+    grid-row: 1/7;
+
+    @include mediaDesktopTab {
+        grid-column: 2/3;
+        grid-row: 12/18;
+    }
+
+    
+    @include mediaTabletMob {
+        grid-column: 1/2;
+        grid-row: 45/51;
+    }
+
+&::before {
+    content: "П";
+}
+}
+
+.letterS {
+    grid-column: 3/4;
+    grid-row: 8/14;
+
+    @include mediaDesktopTab {
+        grid-column: 2/3;
+        grid-row: 19/25;
+    }
+
+    @include mediaTabletMob {
+        grid-column: 1/2;
+        grid-row: 52/58;
+    }
+
+&::before {
+    content: "С";
+}
+}
+
+.letterT {
+    grid-column: 3/4;
+    grid-row: 15/21;
+
+    @include mediaDesktopTab {
+        grid-column: 2/3;
+        grid-row: 26/32;
+    }
+
+    @include mediaTabletMob {
+        grid-column: 1/2;
+        grid-row: 59/65;
+    }
+
+&::before {
+    content: "T";
+}
+}
+
+
+
+.letter-item {
+    padding: 8px;
+    width: 256px;
+    height: 60px;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    background: $slide;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        background: #F3F3F3;
+    }
+}
+
+.tours__image {
+    float: left;
+    margin-right: 13px;
+
+}
+
+.letter__title {
+    padding-top: 5px;
+    color: $black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.letter__text {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+
+}

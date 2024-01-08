@@ -1,0 +1,88 @@
+.select {
+    position: relative;
+    height: 385px;
+    background: url(./../img/countries/countries.jpg) center no-repeat;
+    background-size: auto 122%;
+    background-position: bottom;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.22);
+        z-index: -1;
+    }
+
+    @include mediaTablet {
+        height: 344px;
+        background: url(./../img/countries/countries_tab.jpg) center no-repeat;
+        background-size: inherit;
+        background-position: center -75px ;
+    }
+
+    @include mediaMobile {
+        height: 327px;
+        background: url(./../img/countries/countries_mob.jpg) center no-repeat;
+        background-size: 576px auto;
+        background-position: center -124px ;
+    }
+}
+
+.select__header {
+    padding-top: 82px;
+    font-size: 100px;
+
+    @include mediaDesktopTab {
+        padding-top: 100px;
+        font-size: 80px;
+    }
+
+    @include mediaTablet {
+        padding-top: 76px;
+        font-size: 71px;
+        line-height: normal;
+    }
+
+    @include mediaMobile {
+        margin: 0 auto;
+        max-width: 230px;
+        font-size: 54px;
+    }
+}
+
+.select__text {
+    padding-top: 0px;
+
+    @include mediaDesktopTab {
+        font-size: 26px;
+    }
+
+    @include mediaTablet {
+        padding-top: 14px; 
+        font-size: 24px;
+    }
+
+    @include mediaMobile {
+        margin: 0 auto;
+        max-width: 312px;
+        font-size: 24px;
+    }
+}
+
+.select__menu {
+    margin-top: 80px;
+
+    @include mediaDesktopTab {
+        margin-top: 60px;
+    }
+
+    @include mediaTablet {
+        margin-top: 20px;
+    }
+
+    @include mediaMobile {
+        margin-top: 44px;
+    }
+}

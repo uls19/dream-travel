@@ -1,0 +1,24 @@
+//base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+//main
+@import "./main/header-top";
+@import "./main/header-menu";
+@import "./main/pop-up";
+
+
+//countries
+@import "./main/top-before";
+@import "./countries/top-before";
+@import "./main/select";
+@import "./countries/select";
+@import "./selection/info-nav";
+@import "./countries/tours";
+
+
+//footer
+@import "./main/footer";
+@import "./countries/footer";
