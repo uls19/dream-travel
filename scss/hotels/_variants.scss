@@ -1,0 +1,149 @@
+.all-variants {
+        padding-left: calc(50% - 560px);
+        padding-right: calc(50% - 560px);
+        padding-top: 104px;
+        overflow-x: hidden;
+        min-height: 500px;
+        background: $slide; 
+    
+        @include mediaDesktopTab {
+            padding-left: calc(50% - 476px);
+            padding-right: calc(50% - 456px);
+        }
+    
+        @include mediaTablet {
+            padding-left: calc(50% - 472px);
+            padding-right: calc(50% - 472px);
+            overflow-x: hidden;
+        }
+    
+    }
+
+.variants__header {
+
+    @include mediaTablet {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @include mediaMobile {
+    text-align: center;
+    
+    }
+}
+
+.variants-top {
+    margin: 0;
+
+    @include mediaTablet {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @include mediaMobile {
+        align-items: center;
+    }
+   
+}
+.variants__right {
+    @include mediaTablet {
+        margin-left: 14px;    
+    }
+
+     @include mediaTabletMob {
+        margin-left: 0px;  
+    }
+}
+
+.variants__right-button {
+
+    @include mediaMobile {
+      background-color: $slide;
+     }
+
+     &:hover {
+        @include mediaMobile {
+            background-color: $slide;;  
+        }
+    }
+    }
+
+.variants__item {
+    align-items: center; 
+    background-color: white;
+
+    @include mediaTablet {
+       width: 473px;
+        background-size: 528px auto;
+        margin-left: auto;
+        height: auto;
+        background-position: center top -90px;
+    }
+
+    @include mediaMobile {
+        width: 289px;
+        background-size: 395px auto;
+     }
+}
+
+.all-variants-image::before {
+    transform: translate(20px, -104px);
+
+    @include mediaTablet {
+        transform: translate(20px, -224px);
+     }
+}
+
+.header-card {
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:hover {
+        color: $grey;
+        cursor: default;
+    }
+}
+
+.variants__item-right {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-left: 30px;
+
+    @include mediaTablet {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+}
+
+.variants__item-detailed {
+    padding-top: 122px;
+    @include mediaTablet {
+        padding-top: 0px;
+        
+        }
+}
+
+.variants__item-price {
+
+    @include mediaTablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+}
+.variants__line {
+@include mediaTablet {
+   width: 400px; 
+    }
+
+    @include mediaMobile {
+        width: 250px; 
+         }
+}
+
+.allVariants {
+    margin-top: 39px;
+}
+
+
+

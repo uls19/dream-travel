@@ -1,0 +1,25 @@
+.top-before {
+    height: 568px;
+
+    @include mediaDesktopTab {
+        height: 568px; 
+    }
+
+    @include mediaTablet {
+        height: 526px; 
+    }
+
+    @include mediaMobile {
+        height: 452px;
+    }
+}
+
+.application {
+    @include mediaTablet {
+        top:120px;
+    } 
+
+    @include mediaMobile {
+        top: 76px;
+    }
+} 

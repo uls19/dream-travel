@@ -346,9 +346,7 @@ body {
   max-width: 1920px;
   background-color: #FFF;
   z-index: 1;
-  transition: top 1s ease-in-out, opacity 1s ease-in-out;
-  /* тень под меню */
-  box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
+  transition: top 1s ease-in-out, box-shadow 1s ease-in-out, opacity 1s ease-in-out;
 }
 @media screen and (max-width: 576px) {
   .header__menu {
@@ -358,6 +356,8 @@ body {
 
 .menu__show {
   top: 82px;
+  /* тень под меню */
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
 }
 
 .header__menu-box {
@@ -1206,6 +1206,11 @@ body {
   background-color: #F8F8F8;
 }
 @media screen and (max-width: 576px) {
+  .variants__right-button:hover {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 576px) {
   .variants__right-button {
     padding: 10px 0px 10px 26px;
     background-position: left center;
@@ -1343,12 +1348,19 @@ body {
   }
 }
 
+.variants__text-link {
+  color: #1C1C1C;
+}
 .variants__text-link:hover {
   text-decoration: underline;
 }
 
 .header-card {
   padding-left: 0;
+}
+.header-card:hover {
+  color: #585858;
+  cursor: default;
 }
 
 .variants__comments {
@@ -1592,7 +1604,8 @@ body {
   background: #D4D4D4;
 }
 
-.variants__button-prev, .variants__button-next {
+.variants__button-prev,
+.variants__button-next {
   border-radius: 32px;
   width: 32px;
   height: 32px;
@@ -1604,11 +1617,13 @@ body {
   transition: opacity 0.8s ease-in-out, background 0.3s ease-in-out;
 }
 @media screen and (max-width: 984px) {
-  .variants__button-prev, .variants__button-next {
+  .variants__button-prev,
+  .variants__button-next {
     display: none;
   }
 }
-.variants__button-prev:hover, .variants__button-next:hover {
+.variants__button-prev:hover,
+.variants__button-next:hover {
   background: #F8F8F8;
 }
 

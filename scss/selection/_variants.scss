@@ -193,7 +193,9 @@
 
     &:hover {
         background-color: $slide;
-
+        @include mediaMobile {
+            background-color: white;  
+        }
     }
 
 
@@ -203,7 +205,6 @@
         transition: none;
         border-radius: 0px;
         border: none;
-
     }
 }
 
@@ -269,14 +270,14 @@
     background-image: url('./../img/variants/image4.jpg');
 
     &::before {
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-image: url('./../img/variants/fire.png');
-    transform: translate(20px, 20px); //x y
-    background-repeat: no-repeat;
-    background-position: center;
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-image: url('./../img/variants/fire.png');
+        transform: translate(20px, 20px); //x y
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -304,7 +305,7 @@
         transform: translate(20px, 20px); //x y
         background-repeat: no-repeat;
         background-position: center;
-        }
+    }
 }
 
 .variants__item-image {
@@ -343,12 +344,21 @@
     }
 }
 
-.variants__text-link:hover {
-    text-decoration: underline;
+.variants__text-link {
+    color: $black-1;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .header-card {
     padding-left: 0;
+
+    &:hover {
+        color: $grey;
+        cursor: default;
+    }
 }
 
 .variants__comments {
@@ -596,7 +606,8 @@
     background: $line;
 }
 
-.variants__button-prev, .variants__button-next {
+.variants__button-prev,
+.variants__button-next {
     border-radius: 32px;
     width: 32px;
     height: 32px;
@@ -615,24 +626,25 @@
         background: $slide;
     }
 }
+
 .variants__button-prev {
     top: 440px;
-    left:30px; 
+    left: 30px;
 
 
     @include mediaDesktopTab {
-        left:20px;   
+        left: 20px;
     }
-   
+
 
 }
 
 .variants__button-next {
     top: 440px;
-    left:325px;
+    left: 325px;
 
     @include mediaDesktopTab {
-        left:230px;   
+        left: 230px;
     }
 }
 
@@ -644,6 +656,7 @@
     margin: 18px auto 0;
 
 }
+
 .swiper__button {
     width: 32px;
     height: 32px;
@@ -654,13 +667,13 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: 10;
-   
+
 
     &:hover {
         background-color: $slide;
         cursor: pointer;
     }
-    
+
 }
 
 .swiper-pagination {
@@ -670,8 +683,9 @@
 }
 
 .swiper-pagination-current {
-    color:$black-1;
+    color: $black-1;
 }
+
 .swiper-pagination-current::before {
     content: "";
     position: absolute;
@@ -696,12 +710,13 @@
     color: $grey;
     font-family: Roboto;
     font-size: 14px;
-     font-style: normal;
-     font-weight: 300;
-     line-height: normal;
-   
- 
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+
 }
+
 .swiper-pagination-total {
     display: none;
 }

@@ -1,0 +1,26 @@
+//base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+//main
+@import "./main/header-top";
+@import "./main/header-menu";
+@import "./main/pop-up";
+
+//hotels
+@import "./main/top-before";
+@import "./hotels/top-before";
+@import "./main/select";
+@import "./hotels/select";
+@import "./selection/info-nav";
+@import "./hotels/hotels-nav";
+@import "./hotels/hotels-sliders";
+@import "./selection/variants";
+@import "./hotels/variants";
+
+
+//footer
+@import "./main/footer";
+@import "./selection/footer";

@@ -1,0 +1,171 @@
+.select {
+    position: relative;
+    height: 482px;
+    background: url(./../img/hotels/hotels.jpg) center no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.22);
+        z-index: -1;
+    }
+
+    @include mediaTablet {
+        height: 442px;
+    }
+
+    @include mediaMobile {
+        height: 385px;
+    }
+}
+
+.select__header {
+    padding-top: 82px;
+    font-size: 100px;
+
+    @include mediaDesktopTab {
+        padding-top: 100px;
+        font-size: 80px;
+    }
+
+    @include mediaTablet {
+        padding-top: 100px;
+        font-size: 71px;
+        line-height: normal;
+    }
+
+    @include mediaMobile {
+        margin: 0 auto;
+        max-width: 230px;
+        font-size: 54px;
+    }
+}
+
+.select__text {
+    padding-top: 0px;
+
+    @include mediaDesktopTab {
+        font-size: 26px;
+    }
+
+    @include mediaTablet {
+        padding-top: 14px;
+        font-size: 24px;
+    }
+
+    @include mediaMobile {
+        margin: 0 auto;
+        max-width: 260px;
+        font-size: 24px;
+    }
+}
+
+.select__menu {
+    margin-top: 80px;
+    grid-template-columns: 1fr 144px;
+    grid-template-areas: none;
+
+    @include mediaDesktopTab {
+        margin-top: 60px;
+    }
+
+    @include mediaTablet {
+        grid-template-columns: 1fr 40px;
+        grid-template-areas: none;
+        height: 64px;
+        padding: 0px 12px 0px;
+        margin-top: 60px;
+    }
+
+    @include mediaMobile {
+        margin-top: 44px;
+    }
+}
+
+.search__inp {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 52px;
+    font-size: 16px;
+
+    &_small {
+        display: none;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 52px;
+        font-size: 16px;
+    }
+
+    @include mediaTablet {
+        display: none;
+
+        &_small {
+            display: block;
+        }
+    }
+}
+
+
+
+
+input[type="search"]::-moz-placeholder {
+    color: $grey;
+    /* Цвет подсказывающего текста */
+    font-size: 14px;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: $grey;
+    font-size: 14px;
+}
+
+input[type="search"]::-ms-input-placeholder {
+    color: $grey;
+    font-size: 14px;
+}
+
+input[type="search"]::-ms-input-placeholder {
+    color: $grey;
+    font-size: 14px;
+}
+
+input[type="search"]::placeholder {
+    color: $grey;
+    font-size: 14px;
+}
+
+.search__image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 15px;
+
+    @include mediaTablet {
+        margin-left: 13px;
+    }
+}
+
+.select__button {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @include mediaTablet {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0px;
+        & > span {
+            display: none;
+        }
+    }
+}
+
+@include mediaTablet {
+    .select__button > span {
+        display: none;
+    }
+}
