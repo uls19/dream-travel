@@ -7,6 +7,55 @@ mask.remove();
   }, 600);
   });
 
+// //Header-Phone
+const menuSvg = document.querySelector('.button-phone');
+const phoneEl = document.querySelector('.header__nav-phone');
+// вызываем элемент и скрываем если клик был за его пределами
+
+const togglePhone = function () {
+  phoneEl.classList.toggle("phone__show");
+}
+
+menuSvg.addEventListener("click", function (e) {
+  e.stopPropagation();
+  togglePhone();
+});
+
+document.addEventListener("click", function (e) {
+  const target = e.target;
+  const its_phone = target == phoneEl || phoneEl.contains(target);
+  const its_btnSvg = target == menuSvg;
+  const menu_is_active = phoneEl.classList.contains("phone__show");
+  if (!its_phone && !its_btnSvg && menu_is_active) {
+    togglePhone();
+  }
+});
+
+// //Header-location
+const menuSvg1 = document.querySelector('.button-location');
+const locationEl = document.querySelector('.header__nav-location');
+// вызываем элемент и скрываем если клик был за его пределами
+
+const toggleLocation = function () {
+  locationEl.classList.toggle("location__show");
+}
+
+menuSvg1.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleLocation();
+});
+
+document.addEventListener("click", function (e) {
+  const target = e.target;
+  const its_location = target == locationEl || locationEl.contains(target);
+  const its_btnSvg1 = target == menuSvg1;
+  const menu_is_active = locationEl.classList.contains("location__show");
+  if (!its_location && !its_btnSvg1 && menu_is_active) {
+    toggleLocation();
+  }
+});
+
+
 // //menu
   const burgerEl = document.querySelector('.header__nav-burger');
   const menuEl = document.querySelector('.header__menu');
