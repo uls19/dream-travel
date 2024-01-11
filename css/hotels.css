@@ -1012,6 +1012,11 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 576px) {
+  .search__inp_small {
+    padding-left: 42px;
+  }
+}
 
 input[type=search]::-moz-placeholder {
   color: #585858;
