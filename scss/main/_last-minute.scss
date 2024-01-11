@@ -1,3 +1,14 @@
+.main {
+  margin-bottom: 140px;
+
+  @include mediaDesktopTab {
+    margin-bottom: 100px;
+  }
+
+  @include mediaMobile{
+    margin-bottom: 80px;
+  }
+}
 .last-minute {
   padding-left: 24px;
   padding-right: 24px;

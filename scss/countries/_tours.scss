@@ -3,10 +3,12 @@
     padding-right: calc(50% - 560px);
     overflow-x: hidden;
     min-height: 500px;
+    margin-bottom: 140px;
 
     @include mediaDesktopTab {
         padding-left: calc(50% - 476px);
         padding-right: calc(50% - 456px);
+        margin-bottom: 100px;
     }
 
     @include mediaTablet {
@@ -15,6 +17,9 @@
         overflow-x: hidden;
     }
 
+    @include mediaMobile {
+        margin-bottom: 80px;
+    }
 }
 
 .tours__header {

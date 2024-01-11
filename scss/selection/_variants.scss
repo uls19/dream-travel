@@ -236,8 +236,8 @@
     @include mediaTablet {
         grid-template-columns: 1fr;
         grid-template-rows: 200px auto auto auto auto;
-        width: 384px;
-        background-size: 384px 280px;
+        width: 473px;
+        background-size: 472px 280px;
         margin-left: auto;
         margin-right: auto;
         height: auto;
@@ -587,7 +587,7 @@
     @include mediaTablet {
         position: absolute;
         transform: rotate(0deg);
-        width: 260px;
+        width: 400px;
         top: -4px;
         left: 0;
         right: 0;
@@ -596,7 +596,15 @@
 }
 
 .myVariants {
-    padding-bottom: 52px;
+    padding-bottom: 90px;
+
+    @include mediaDesktopTab {
+        padding-bottom: 100px;  
+    }
+
+    @include mediaMobile{
+        padding-bottom: 80px;  
+    }
 }
 
 .swiper-bottom-line {

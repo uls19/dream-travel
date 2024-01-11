@@ -246,46 +246,45 @@ mask.remove();
  });
 
 
- //кнопки слайдера Rating
+// кнопки слайдера allVariants
 
-//  const swiperRl = document.querySelector(".lastRating");
-//  const buttonRnt = document.querySelector(".rating__button-next");
-//  const buttonRpv = document.querySelector(".rating__button-prev");
+const swiperAllVar = document.querySelector(".all-variants-wrapper");
+const buttonVan = document.querySelector(".all-variants__button-next");
+const buttonVap = document.querySelector(".all-variants__button-prev");
 
-//  swiperRl.onmouseover = function (e) { 
-//  buttonRnt.style.opacity = '1';
-//  buttonRpv.style.opacity = '1';
-//  }
+swiperAllVar.onmouseover = function (e) { 
+buttonVan.style.opacity = '1';
+buttonVap.style.opacity = '1';
+}
 
-//  buttonRnt.onmouseover = function (e) {
-//    buttonRnt.style.opacity = '1';
-//    buttonRpv.style.opacity = '1';
-//  }
+buttonVan.onmouseover = function (e) {
+  buttonVan.style.opacity = '1';
+  buttonVap.style.opacity = '1';
+}
 
-//  buttonRpv.onmouseover = function (e) {
-//    buttonRnt.style.opacity = '1';
-//    buttonRpv.style.opacity = '1';
-//  }
+buttonVap.onmouseover = function (e) {
+ buttonVan.style.opacity = '1';
+ buttonVap.style.opacity = '1';
+}
 
-//  swiperRl.onmouseout = function (e) { 
-//        buttonRnt.style.opacity = '0';
-//        buttonRpv.style.opacity = '0';
-//      }
+swiperAllVar.onmouseout = function (e) { 
+      buttonVan.style.opacity = '0';
+      buttonVap.style.opacity = '0';
+    }
 
 
 //слайдер allVariants код
-const swiperAll = new Swiper(".allVariants", {
- slidesPerView: 1,
- spaceBetween: 30,
- loop: true,
- 
- pagination: {
-   el: ".rating__pagination",
-   type: "progressbar",
- },
- navigation: {
-   nextEl: ".rating__button-next",
-   prevEl: ".rating__button-prev",
- },
 
+var swiperAllVarian = new Swiper(".allVariants", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".all-variants__button-prev",
+  },
 });

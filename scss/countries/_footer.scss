@@ -1,16 +1,4 @@
 .footer {
-    margin-top: 148px;
     background-image: none;
-
-    @include mediaDesktopTab {
-        margin-top: 88px;
-    }
-
-   
-
-    @include mediaTabletMob  {
-        margin-top: 68px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
 }
+

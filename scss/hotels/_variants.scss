@@ -12,8 +12,8 @@
         }
     
         @include mediaTablet {
-            padding-left: calc(50% - 472px);
-            padding-right: calc(50% - 472px);
+            padding-left: calc(50% - 352px);
+            padding-right: calc(50% - 356px);
             overflow-x: hidden;
         }
     
@@ -143,7 +143,61 @@
 
 .allVariants {
     margin-top: 39px;
+    padding-bottom: 140px;
+
+    @include mediaDesktopTab {
+        padding-bottom: 100px; 
+    }
+
+    @include mediaMobile {
+        padding-bottom: 80px; 
+    }
 }
 
+
+.all-variants__button-prev,
+.all-variants__button-next {
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+    background: #FFF;
+    --swiper-theme-color: #1C1C1C;
+    --swiper-navigation-size: 14px;
+    opacity: 0;
+    filter: drop-shadow(0px 4px 20px rgba(43, 43, 51, 0.2));
+    transition: opacity 0.8s ease-in-out, background 0.3s ease-in-out;
+
+    @include mediaTablet {
+        display: none;
+    }
+
+    &:hover {
+        background: $slide;
+    }
+}
+
+.swiper-pagination-current::after {
+    content: " из 52";
+    background-color: $slide;
+}
+
+.all-variants__button-prev {
+    top: 440px;
+    left: 30px;
+
+
+    @include mediaDesktopTab {
+        left: 20px;
+    }
+}
+
+.all-variants__button-next {
+    top: 440px;
+    left: 325px;
+
+    @include mediaDesktopTab {
+        left: 230px;
+    }
+}
 
 

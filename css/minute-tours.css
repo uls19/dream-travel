@@ -1244,8 +1244,8 @@ body {
   .variants__item {
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto auto auto auto;
-    width: 384px;
-    background-size: 384px 280px;
+    width: 473px;
+    background-size: 472px 280px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -1586,7 +1586,7 @@ body {
   .variants__line {
     position: absolute;
     transform: rotate(0deg);
-    width: 260px;
+    width: 400px;
     top: -4px;
     left: 0;
     right: 0;
@@ -1595,7 +1595,17 @@ body {
 }
 
 .myVariants {
-  padding-bottom: 52px;
+  padding-bottom: 90px;
+}
+@media screen and (max-width: 1248px) {
+  .myVariants {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .myVariants {
+    padding-bottom: 80px;
+  }
 }
 
 .swiper-bottom-line {
@@ -1769,20 +1779,13 @@ body {
 }
 
 .footer {
-  margin-top: 140px;
   background-image: url(./../img/willian1.jpg);
   background-size: auto 454px;
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 1248px) {
-  .footer {
-    margin-top: 100px;
-  }
-}
 @media screen and (max-width: 576px) {
   .footer {
-    margin-top: 80px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -2160,18 +2163,5 @@ body {
 }
 
 .footer {
-  margin-top: 48px;
   background-image: url(./../img/willian2.jpg);
-}
-@media screen and (max-width: 1248px) {
-  .footer {
-    margin-top: 38px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .footer {
-    margin-top: 28px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }/*# sourceMappingURL=minute-tours.css.map */

@@ -1035,11 +1035,13 @@ body {
   padding-right: calc(50% - 560px);
   overflow-x: hidden;
   min-height: 500px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 1248px) {
   .tours {
     padding-left: calc(50% - 476px);
     padding-right: calc(50% - 456px);
+    margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 984px) {
@@ -1047,6 +1049,11 @@ body {
     padding-left: calc(50% - 352px);
     padding-right: calc(50% - 356px);
     overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tours {
+    margin-bottom: 80px;
   }
 }
 
@@ -1293,20 +1300,13 @@ body {
 }
 
 .footer {
-  margin-top: 140px;
   background-image: url(./../img/willian1.jpg);
   background-size: auto 454px;
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 1248px) {
-  .footer {
-    margin-top: 100px;
-  }
-}
 @media screen and (max-width: 576px) {
   .footer {
-    margin-top: 80px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -1684,18 +1684,5 @@ body {
 }
 
 .footer {
-  margin-top: 148px;
   background-image: none;
-}
-@media screen and (max-width: 1248px) {
-  .footer {
-    margin-top: 88px;
-  }
-}
-@media screen and (max-width: 744px) {
-  .footer {
-    margin-top: 68px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }/*# sourceMappingURL=countries.css.map */

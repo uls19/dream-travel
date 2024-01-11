@@ -862,6 +862,20 @@ body {
   }
 }
 
+.main {
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 1248px) {
+  .main {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    margin-bottom: 80px;
+  }
+}
+
 .last-minute {
   padding-left: 24px;
   padding-right: 24px;
@@ -2430,20 +2444,13 @@ body {
 }
 
 .footer {
-  margin-top: 140px;
   background-image: url(./../img/willian1.jpg);
   background-size: auto 454px;
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media screen and (max-width: 1248px) {
-  .footer {
-    margin-top: 100px;
-  }
-}
 @media screen and (max-width: 576px) {
   .footer {
-    margin-top: 80px;
     padding-left: 0px;
     padding-right: 0px;
   }
