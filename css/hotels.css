@@ -1538,6 +1538,12 @@ input[type=search]::placeholder {
   }
 }
 
+.main {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .variants {
   padding-left: calc(50% - 560px);
   padding-right: calc(50% - 560px);

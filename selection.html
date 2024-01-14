@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./nouislider/nouislider.min.css">
     <link rel="stylesheet" href="./css/selection.css">
 
 </head>
@@ -22,7 +23,8 @@
                     <img class="header__logo-img" src="./img/logo.svg" alt="logo"></a>
                 <ul class="header__nav-ul">
                     <li class="header__nav-li1"><a href="./selection.html" class="header__nav-link">Подбор тура</a></li>
-                    <li class="header__nav-li2"><a href="./minute-tours.html" class="header__nav-link header__nav-link_color">Горящие
+                    <li class="header__nav-li2"><a href="./minute-tours.html"
+                            class="header__nav-link header__nav-link_color">Горящие
                             туры</a></li>
                     <li class="header__nav-li3"><a href="./countries.html" class="header__nav-link">Страны</a></li>
                     <li class="header__nav-li4"><a href="./hotels.html" class="header__nav-link">отели</a></li>
@@ -37,12 +39,12 @@
                                 d="M23.8008 19.8575C23.8008 20.2475 23.7141 20.6483 23.53 21.0383C23.3458 21.4283 23.1075 21.7967 22.7933 22.1433C22.2625 22.7283 21.6775 23.1508 21.0166 23.4217C20.3666 23.6925 19.6625 23.8333 18.9041 23.8333C17.7991 23.8333 16.6183 23.5733 15.3725 23.0425C14.1266 22.5117 12.8808 21.7967 11.6458 20.8975C10.4 19.9875 9.21913 18.98 8.09246 17.8642C6.97663 16.7375 5.96913 15.5567 5.06996 14.3217C4.18163 13.0867 3.46663 11.8517 2.94663 10.6275C2.42663 9.39249 2.16663 8.21166 2.16663 7.08499C2.16663 6.34832 2.29663 5.64416 2.55663 4.99416C2.81663 4.33332 3.22829 3.72666 3.80246 3.18499C4.49579 2.50249 5.25413 2.16666 6.05579 2.16666C6.35913 2.16666 6.66246 2.23166 6.93329 2.36166C7.21496 2.49166 7.46413 2.68666 7.65913 2.96832L10.1725 6.51082C10.3675 6.78166 10.5083 7.03082 10.6058 7.26916C10.7033 7.49666 10.7575 7.72416 10.7575 7.92999C10.7575 8.18999 10.6816 8.44999 10.53 8.69916C10.3891 8.94832 10.1833 9.20832 9.92329 9.46832L9.09996 10.3242C8.98079 10.4433 8.92663 10.5842 8.92663 10.7575C8.92663 10.8442 8.93746 10.92 8.95913 11.0067C8.99163 11.0933 9.02413 11.1583 9.04579 11.2233C9.24079 11.5808 9.57663 12.0467 10.0533 12.61C10.5408 13.1733 11.0608 13.7475 11.6241 14.3217C12.2091 14.8958 12.7725 15.4267 13.3466 15.9142C13.91 16.3908 14.3758 16.7158 14.7441 16.9108C14.7983 16.9325 14.8633 16.965 14.9391 16.9975C15.0258 17.03 15.1125 17.0408 15.21 17.0408C15.3941 17.0408 15.535 16.9758 15.6541 16.8567L16.4775 16.0442C16.7483 15.7733 17.0083 15.5675 17.2575 15.4375C17.5066 15.2858 17.7558 15.21 18.0266 15.21C18.2325 15.21 18.4491 15.2533 18.6875 15.3508C18.9258 15.4483 19.175 15.5892 19.4458 15.7733L23.0316 18.3192C23.3133 18.5142 23.5083 18.7417 23.6275 19.0125C23.7358 19.2833 23.8008 19.5542 23.8008 19.8575Z"
                                 stroke-width="1.5" stroke-miterlimit="10" />
                         </svg></a>
-                        <div class="header__nav-phone">
-                            <p class="header__phone-number">+ 8 (495) 000-00-00<br>+ 8 (925) 000-00-00</p>
-                        </div>
+                    <div class="header__nav-phone">
+                        <p class="header__phone-number">+ 8 (495) 000-00-00<br>+ 8 (925) 000-00-00</p>
+                    </div>
                     <a href="#!">
-                        <svg class="header__nav-svg button-location" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__nav-svg button-location" width="26" height="26" viewBox="0 0 26 26"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M13 14.5492C14.8667 14.5492 16.38 13.0359 16.38 11.1692C16.38 9.30243 14.8667 7.78915 13 7.78915C11.1333 7.78915 9.62 9.30243 9.62 11.1692C9.62 13.0359 11.1333 14.5492 13 14.5492Z"
                                 stroke="#1C1C1C" stroke-width="1.5" />
@@ -106,7 +108,7 @@
     <div class="pop-up">
         <div class="pop-up__top">
             <a class="header__logo-link" href="./index.html">
-            <img class="pop-up__img" src="./img/logo.svg" alt="logo"></a>
+                <img class="pop-up__img" src="./img/logo.svg" alt="logo"></a>
             <button class="pop-up__button-out" type="button"></button>
         </div>
         <div class="pop-up__menu">
@@ -131,7 +133,8 @@
                     <li><a class="pop-up__menu-link" href="./selection.html">Подбор тура</a></li>
                 </ul>
                 <ul class="pop-up__box2">
-                    <li><a class="pop-up__menu-link" href="./minute-tours.html" style="color: #EC1C24; font-weight: 500">Горящие
+                    <li><a class="pop-up__menu-link" href="./minute-tours.html"
+                            style="color: #EC1C24; font-weight: 500">Горящие
                             туры</a>
                     </li>
                     <li><a class="pop-up__menu-link" href="#!">Как купить и оплатить тур</a></li>
@@ -232,1187 +235,1395 @@
         <a class="info-nav__link1" href="./index.html">Главная /</a>
         <a class="info-nav__link2" href="./selection.html">Подбор тура</a>
     </div>
-    <main class="variants">
-        <h2 class="header-last variants__header">найденные варианты<a class="variants__header-link" href="#!">(2672
-                <span>предложения</span>)</a></h2>
-        <div class="variants-top">
-            <div class="variants__select-popup">
-                <a class="variants__popup-link" href="#!">Рекомендации для вас</a>
-                <div class="variants__popup-line"></div>
-                <a class="variants__popup-link" href="#!">Высший рейтинг</a>
-                <div class="variants__popup-line"></div>
-                <a class="variants__popup-link" href="#!">Низшая цена</a>
-                <div class="variants__popup-line"></div>
-                <a class="variants__popup-link" href="#!">Дата с самого раннего</a>
-                <div class="variants__popup-line"></div>
-                <a class="variants__popup-link" href="#!">Дата начиная с последней</a>
+    <main class="main">
+        <div class="variants">
+            <h2 class="header-last variants__header">найденные варианты<a class="variants__header-link" href="#!">(2672
+                    <span>предложения</span>)</a></h2>
+            <div class="variants-top">
+                <div class="variants__select-popup">
+                    <a class="variants__popup-link" href="#!">Рекомендации для вас</a>
+                    <div class="variants__popup-line"></div>
+                    <a class="variants__popup-link" href="#!">Высший рейтинг</a>
+                    <div class="variants__popup-line"></div>
+                    <a class="variants__popup-link" href="#!">Низшая цена</a>
+                    <div class="variants__popup-line"></div>
+                    <a class="variants__popup-link" href="#!">Дата с самого раннего</a>
+                    <div class="variants__popup-line"></div>
+                    <a class="variants__popup-link" href="#!">Дата начиная с последней</a>
+                </div>
+                <div class="variants__select">
+                    <p class="variants__select-title">Сортировать: <a class="variants__select-link" href="#!">
+                            рекомендации
+                            для вас</a>
+                    </p>
+                </div>
+                <div class="variants__right">
+                    <a class="variants__right-link" href="#!">Карта</a>
+                    <button class="variants__right-button" type="button">Фильтры</button>
+                </div>
             </div>
-            <div class="variants__select">
-                <p class="variants__select-title">Сортировать: <a class="variants__select-link" href="#!"> рекомендации
-                        для вас</a>
-                </p>
+            <div class="filters">
+                <div class="filters__content">
+                    <div class="filters__top">
+                        <h4 class="filters__header">Фильтры</h4>
+                        <div class="filters__out"></div>
+                    </div>
+                    <div class="filters__main">
+                        <h4 class="filters__title">показать цену</h4>
+                        <div class="filters__radio-top">
+                            <label class="filters__label-top">
+                                <input type="radio" name="group1" class="filters__stock-radio" checked="checked">
+                                <span class="filters__radio-fake radio-fake-1"></span>
+                                <span class="header__stock-link">на человека</span>
+                            </label>
+
+                            <label class="filters__label-top">
+                                <input type="radio" name="group1" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">на всех</span>
+                            </label>
+                        </div>
+                        <div class="filters__radio-group2">
+                            <h4 class="filters__title">предложение</h4>
+
+                            <label class="filters__label">
+                                <input type="radio" name="group2" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Горящие туры</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group2" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Зима 2023/2024</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group2" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Весна 2024</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group2" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Лето 2024</span>
+                            </label>
+
+                        </div>
+
+                        <div class="filters__radio-group3">
+                            <h4 class="filters__title">выбрано для вас</h4>
+
+                            <label class="filters__label">
+                                <input type="radio" name="group3" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Все включено</span>
+
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group3" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Отель для взрослых</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group3" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Песчаный пляж</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group3" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">СПА</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group3" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link"> Стандарт отеля от 4
+                                    звезд</span>
+                            </label>
+
+                        </div>
+
+                        <div class="filters__radio-group4">
+                            <h4 class="filters__title">выбрано для вас</h4>
+
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link">еда</span>
+
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link">2-х разовое питание</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio" checked="checked">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link">3-разовое питание</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link">Все включено</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link">Без еды</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group4" class="filters__stock-radio">
+                                <span class="filters__radio-fake filters__fake-check"></span>
+                                <span class="header__stock-link"> Завтраки</span>
+                            </label>
+
+                        </div>
+                        <div class="filters__radio-group5">
+                            <h4 class="filters__title">рейтинг отеля</h4>
+
+                            <label class="filters__label">
+                                <input type="radio" name="group5" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">от 5<img class="filters__radio-image"
+                                        src="./img/star.svg" alt="star"></span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group5" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">от 4<img class="filters__radio-image"
+                                        src="./img/star.svg" alt="star"></span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group5" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">от 3<img class="filters__radio-image"
+                                        src="./img/star.svg" alt="star"></span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group5" class="filters__stock-radio" checked="checked">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">любой</span>
+                            </label>
+
+                        </div>
+                        <div class="filters__slider">
+                            <h4 class="filters__title">продолжительность пребывания</h4>
+                            <div class="filters-price__slider" id="range-slider"></div>
+                            <div class="filters-price__inputs">
+                                <label class="filters-price__lable">
+                                    <span class="filters-price__text">От</span>
+                                    <input type="number" min="1" max="31" placeholder="3" class="filters-price__input" id="input-0">
+                                </label>
+                                <label class="filters-price__lable filters__lable-right">
+                                    <span class="filters-price__text">до</span>
+                                    <input type="number" min="1" max="31" placeholder="15"
+                                        class="filters-price__input" id="input-1">
+                                        <span class="filters-price__text">ночей</span>     
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filters__radio-group6">
+                            <h4 class="filters__title">удобства</h4>
+
+                            <label class="filters__label">
+                                <input type="radio" name="group6" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Анимации для детей</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group6" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Никаких ночных поездок</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group6" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Близко к центру</span>
+                            </label>
+                            <label class="filters__label">
+                                <input type="radio" name="group6" class="filters__stock-radio">
+                                <span class="filters__radio-fake"></span>
+                                <span class="header__stock-link">Рядом с аэропортом</span>
+                            </label>
+                        </div>
+                        <a href="#!" class="filters__bottom-link">больше удобств</a>
+                    </div>
+                    <div class="filters__bottom-line"></div>
+                    <div class="filters__bottom">
+                        <button class="button button-reset">Очистить</button>
+                        <button class="button button-apply">применить
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round">
+                                </path>
+                                <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="variants__right">
-                <a class="variants__right-link" href="#!">Карта</a>
-                <button class="variants__right-button" type="button">Фильтры</button>
+
+            <div class="swiper myVariants">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="variants__item item-image1">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image2">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image3">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image4">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image5">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image6">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image7">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image8">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="variants__item item-image1">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image2">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image3">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image4">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image5">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image6">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image7">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image8">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="variants__item item-image1">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image2">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image3">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image4">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image5">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
+                                    Родос
+                                </p>
+                                <h4 class="variants__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.5</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">близко к центру</p>
+                                <p class="variants__item-info">3 бассейна при отеле</p>
+                                <p class="variants__item-info">рекомендуем для пар</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image6">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
+                                    Тенерифе</p>
+                                <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.2</a>
+                                    <p class="variants__comment-text">522 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">семейный отдых</p>
+                                <p class="variants__item-info">элегантные номера</p>
+                                <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Зима 2023/2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image7">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
+                                    берег</p>
+                                <h4 class="variants__header header-card">Tiara Yaktsa</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">9.5</a>
+                                    <p class="variants__comment-text">602 отзыва</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
+                                <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">18 лет и старше</p>
+                                <p class="variants__item-info">люксовые номера</p>
+                                <p class="variants__item-info">частный пляж</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Весна 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="variants__item item-image8">
+                            <div class="variants__item-image"></div>
+                            <div class="variants__item-title">
+                                <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
+                                </p>
+                                <h4 class="variants__header header-card">Hotel Las Arenas</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="variants__comments">
+                                    <a href="#!" class="variants__comment-number">8.3</a>
+                                    <p class="variants__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="variants__item-left">
+                                <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
+                                <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
+                            </div>
+                            <div class="variants__item-right">
+                                <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
+                                <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
+                            </div>
+                            <div class="variants__item-year">
+                                <a class="variants__year-link" href="#!">Лето 2024</a>
+
+                                <div class="variants__item-detailed">
+                                    <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button variants__button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="variants__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-bottom-line"></div>
+                <div class="swiper-button-next variants__button-next button-next"></div>
+                <div class="swiper-button-prev variants__button-prev"></div>
+                <div class="swiper-bottom-box">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper__button button-next"></div>
+                </div>
             </div>
         </div>
-
-        <div class="swiper myVariants">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-
-                    <div class="variants__item item-image1">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image2">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image3">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image4">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image5">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image6">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image7">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image8">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="swiper-slide">
-
-                    <div class="variants__item item-image1">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image2">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image3">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image4">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image5">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image6">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image7">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image8">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="swiper-slide">
-
-                    <div class="variants__item item-image1">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image2">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image3">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image4">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный<br> пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image5">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Греция</a>, остров
-                                Родос
-                            </p>
-                            <h4 class="variants__header header-card">Casa Cook</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.5</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">близко к центру</p>
-                            <p class="variants__item-info">3 бассейна при отеле</p>
-                            <p class="variants__item-info">рекомендуем для пар</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>80 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image6">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, остров
-                                Тенерифе</p>
-                            <h4 class="variants__header header-card">RedLevel at Gran Meliá Palacio de Isora</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.2</a>
-                                <p class="variants__comment-text">522 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">28.12.2023 - 04.01.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">семейный отдых</p>
-                            <p class="variants__item-info">элегантные номера</p>
-                            <p class="variants__item-info">частный, песчано-<br>галечный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Зима 2023/2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>100 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image7">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Франция</a>, Лазурный
-                                берег</p>
-                            <h4 class="variants__header header-card">Tiara Yaktsa</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">9.5</a>
-                                <p class="variants__comment-text">602 отзыва</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">29.03 - 07.04.2023 (6&nbsp;дней)</p>
-                            <p class="variants__item-saloon">All&nbsp;inclusive ultra</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">18 лет и старше</p>
-                            <p class="variants__item-info">люксовые номера</p>
-                            <p class="variants__item-info">частный пляж</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Весна 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>350 000 ₽</span>/ за 2</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variants__item item-image8">
-                        <div class="variants__item-image"></div>
-                        <div class="variants__item-title">
-                            <p class="variants__text"><a class="variants__text-link" href="#!">Испания</a>, Майорка
-                            </p>
-                            <h4 class="variants__header header-card">Hotel Las Arenas</h4>
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <img src="./img/variants/star.svg" alt="star">
-                            <div class="variants__comments">
-                                <a href="#!" class="variants__comment-number">8.3</a>
-                                <p class="variants__comment-text">250 отзывов</p>
-                            </div>
-                        </div>
-                        <div class="variants__item-left">
-                            <p class="variants__item-calendar">07.04 - 14.04.2024 (8&nbsp;дней)</p>
-                            <p class="variants__item-saloon">2-х&nbsp;разовое питание</p>
-                        </div>
-                        <div class="variants__item-right">
-                            <p class="variants__item-info">красивый песчаный <br>пляж рядом с отелем</p>
-                            <p class="variants__item-info">очень хорошая и <br>разнообразная кухня</p>
-                        </div>
-                        <div class="variants__item-year">
-                            <a class="variants__year-link" href="#!">Лето 2024</a>
-
-                            <div class="variants__item-detailed">
-                                <p class="variants__item-price"><span>68 000 ₽</span>/ за 1</p>
-                                <button class="button variants__button" type="button">подробнее
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round"></path>
-                                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round">
-                                        </path>
-                                    </svg>
-                                </button>
-                                <div class="variants__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-bottom-line"></div>
-            <div class="swiper-button-next variants__button-next button-next"></div>
-            <div class="swiper-button-prev variants__button-prev"></div>
-            <div class="swiper-bottom-box">
-                <div class="swiper-pagination"></div>
-                <div class="swiper__button button-next"></div>
-            </div>
-        </div>
-
     </main>
 
 
@@ -1588,6 +1799,7 @@
 
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./js/menu-top.js"></script>
+    <script src="./nouislider/nouislider.min.js"></script>
     <script src="./js/selection.js"></script>
 </body>
 
