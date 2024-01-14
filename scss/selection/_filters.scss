@@ -14,11 +14,13 @@
 
 .filters__content {
     display: none;
-    width: 480px;
-    background: $white;
+    background: $white ;
+    max-width: 480px;
     /* тень под меню */
     box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
+ 
 }
+
 .filters__show {
     display: block;
 }
@@ -28,6 +30,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 34px 44px 4px 34px;
+
+    @include mediaMobile {
+        padding: 34px 30px 4px 30px;
+    }
 }
 
 .filters__header {
@@ -51,10 +57,26 @@
 }
 
 .filters__main {
-    padding-left: 34px;
-    padding-right: 20px;
+    padding: 0px 20px 40px 34px;
     flex-shrink: 0;
-    padding-bottom: 40px;
+
+    @include mediaDesktopTab {
+        max-height: 936px;
+        overflow-y: scroll;
+    }
+
+     @include mediaMobile {
+           padding: 0px 30px 40px 30px;
+        max-height: 510px;
+    }
+}
+
+.filters__main::-webkit-scrollbar {
+    width: 4px;
+}
+.filters__main::-webkit-scrollbar-thumb {
+    background: $grey-text;
+    border-radius: 2px;
 }
 
 .filters__title {
@@ -149,7 +171,7 @@ input[type=number] {
 }
 
 .filters__slider {
-    width: 298px;
+    max-width: 298px;
 }
 
 .filters-price__slider {
@@ -180,7 +202,8 @@ input[type=number] {
     color: $black-1;
     font-size: 14px;
     font-weight: 400;
-    line-height: 39px; /* 278.571% */
+    line-height: 39px;
+    /* 278.571% */
 }
 
 .filters-price__input {
@@ -191,19 +214,21 @@ input[type=number] {
     border-radius: 10px;
     border: 2px solid $line;
     background: $white;
-  
+
 }
 
-.noUi-target{
+.noUi-target {
     background-color: $line;
     border: none;
     border-radius: 3px;
     box-shadow: none;
     height: 3px;
 }
+
 .noUi-connect {
-    background-color: #463998; 
+    background-color: #463998;
 }
+
 .noUi-handle::after,
 .noUi-handle::before {
     display: none;
@@ -220,13 +245,9 @@ input[type=number] {
     box-shadow: none;
     border-radius: 100%;
     background-color: $white;
-     border: 3px solid $line;
+    border: 3px solid $line;
 
 }
-
-
-
-
 
 .filters__bottom-link {
     padding-left: 36px;
@@ -249,6 +270,11 @@ input[type=number] {
     justify-content: space-between;
     padding: 20px 36px 20px 20px;
 
+    @include mediaMobile {
+        padding: 10px;
+        row-gap: 10px;
+    }
+
 }
 
 .button-reset {
@@ -258,19 +284,20 @@ input[type=number] {
 
     &:hover {
         background: $white;
+
     }
 
 }
 
 .button-apply {
+    width: 170px;
     border-radius: 30px;
     background: $black-1;
-    padding: 11px 26px 10px;
+    padding: 11px 24px 10px;
     color: $white;
     text-align: right;
     font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
+    border-color: $black-1 ;
 
     &:hover {
         background: $black;

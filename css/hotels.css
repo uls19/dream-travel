@@ -1548,7 +1548,6 @@ input[type=search]::placeholder {
   padding-left: calc(50% - 560px);
   padding-right: calc(50% - 560px);
   overflow-x: hidden;
-  min-height: 500px;
 }
 @media screen and (max-width: 1248px) {
   .variants {

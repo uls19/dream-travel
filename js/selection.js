@@ -62,6 +62,17 @@ filtersOut.addEventListener("click", function () {
   filterSelect.classList.toggle("filters__show");
 });
 
+// //filters-scroll-slider
+// const swiperFl = new Swiper(".myFilters", {
+//   direction: "vertical",
+//   slidesPerView: "auto",
+//   freeMode: true,
+//   scrollbar: {
+//     el: ".filters__swiper-scrollbar",
+//   },
+//   mousewheel: true,
+// });
+
 
 // двойной ползунок
 
@@ -136,10 +147,8 @@ swiperVr.onmouseout = function (e) {
   buttonVrp.style.opacity = '0';
 }
 
-
-
 //swiper-slider
-var swiper = new Swiper(".myVariants", {
+const swiper = new Swiper(".myVariants", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
@@ -152,3 +161,5 @@ var swiper = new Swiper(".myVariants", {
     prevEl: ".variants__button-prev",
   },
 });
+
+

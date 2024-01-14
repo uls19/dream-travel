@@ -7,8 +7,7 @@
     padding-left: calc(50% - 560px);
     padding-right: calc(50% - 560px);
     overflow-x: hidden;
-    min-height: 500px;
-
+    
     @include mediaDesktopTab {
         padding-left: calc(50% - 476px);
         padding-right: calc(50% - 456px);
