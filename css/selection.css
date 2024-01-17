@@ -1935,7 +1935,7 @@ body {
 
 .filters__stock-radio:checked + .filters__fake-check {
   border: none;
-  background-image: url(./../img/radio_check.svg);
+  background-image: url(./../../img/radio.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -2072,6 +2072,10 @@ input[type=number] {
 }
 .button-reset:hover {
   background: #FFF;
+}
+
+.active {
+  color: #1C1C1C;
 }
 
 .button-apply {

@@ -141,7 +141,7 @@
 
 .filters__stock-radio:checked+.filters__fake-check {
     border: none;
-    background-image: url(./../img/radio_check.svg);
+    background-image: url(./../../img/radio.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -287,6 +287,10 @@ input[type=number] {
 
     }
 
+}
+
+.active {
+    color: $black-1;
 }
 
 .button-apply {

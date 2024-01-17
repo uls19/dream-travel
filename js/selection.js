@@ -57,21 +57,16 @@ document.addEventListener("click", function (e) {
 //скрываем элемент кнопкой
 
 const filtersOut = document.querySelector('.filters__out');
+const filtersApp = document.querySelector('.button-apply');
+
 
 filtersOut.addEventListener("click", function () {
   filterSelect.classList.toggle("filters__show");
 });
 
-// //filters-scroll-slider
-// const swiperFl = new Swiper(".myFilters", {
-//   direction: "vertical",
-//   slidesPerView: "auto",
-//   freeMode: true,
-//   scrollbar: {
-//     el: ".filters__swiper-scrollbar",
-//   },
-//   mousewheel: true,
-// });
+filtersApp.addEventListener("click", function () {
+  filterSelect.classList.toggle("filters__show");
+});
 
 
 // двойной ползунок
@@ -89,14 +84,13 @@ if (rangeSlider) {
     }
   });
 
-
   const input0 = document.getElementById('input-0');
   const input1 = document.getElementById('input-1');
   const inputs = [input0, input1];
 
   rangeSlider.noUiSlider.on('update', function (values, handle) {
-
     inputs[handle].value = Math.round(values[handle]);
+    updateButtonState(); // Обновление состояния кнопки сброса
   });
 
   const setRangeSlider = (i, value) => {
@@ -106,7 +100,8 @@ if (rangeSlider) {
     // console.log(arr);
 
     rangeSlider.noUiSlider.set(arr);
-
+    updateButtonState(); // Обновление состояния кнопки сброса
+    
   };
 
   inputs.forEach((el, index) => {
@@ -114,11 +109,60 @@ if (rangeSlider) {
 
       // console.log(index);
 
-    setRangeSlider(index, e.currentTarget.value);
-
+      setRangeSlider(index, e.currentTarget.value);
     });
   });
 }
+
+//сброс фильтра по умолчанию
+
+const resetBtn = document.querySelector('.button-reset');
+const formTop = document.querySelector('.form');
+resetBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // добавили, чтобы не перезагружалась страница
+  formTop.reset();
+  rangeSlider.noUiSlider.reset();
+  resetButton.classList.remove("active");// класс "active" будет удален у кнопки сброса
+});
+
+
+// Обновление состояния кнопки сброса
+
+function updateButtonState() {
+  var resetButton = document.getElementById("resetButton");
+  var radioButtons = document.querySelectorAll(
+    'input[name="group1"]:checked, input[name="group2"], input[name="group3"], input[name="group4"]:checked, input[name="group5"]:checked, input[name="group6"]'
+  );
+
+  var isSliderActive = false;
+
+  // Проверка, есть ли активные ползунки
+
+  var inputs = document.getElementsByClassName("filters-price__input");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value !== "") {
+      isSliderActive = true;
+      break;
+    }
+  }
+  //Если есть выбранные радио-кнопки или активные ползунки, активируем кнопку сброса
+
+  if (radioButtons.length > 0 || isSliderActive) {
+    resetButton.disabled = false;
+    resetButton.classList.add("active");
+  } else {
+    resetButton.disabled = true;
+    resetButton.classList.remove("active");
+  }
+
+}
+
+// Удаление класса "active" при загрузке страницы
+
+window.addEventListener("load", function() {
+  var resetButton = document.getElementById("resetButton");
+  resetButton.classList.remove("active");
+});
 
 
 // кнопки слайдера 
