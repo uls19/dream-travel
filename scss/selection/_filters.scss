@@ -132,19 +132,6 @@
     background-position: center center;
 }
 
-.filters__stock-radio:checked+.filters__radio-fake {
-    border: none;
-    background-image: url(./../img/radio.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.filters__stock-radio:checked+.filters__fake-check {
-    border: none;
-    background-image: url(./../../img/radio.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 .header__stock-link {
     color: $black-1;

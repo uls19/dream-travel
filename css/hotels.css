@@ -831,6 +831,8 @@ body {
   height: 64px;
   border-radius: 30px;
   background-color: #FFF;
+  /* тень под меню */
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
 }
 @media screen and (max-width: 1248px) {
   .select__menu {

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/maps.css">
+</head>
+
+<body>
+    <div class="mask">
+        <div class="loader"></div>
+    </div>
+    <header class="header-maps">
+        <div class="header-maps__top">
+            <a class="header-maps__link" href="./maps.html" target="_blank">
+                <h2 class="header-last header-last-maps">карта</h2>
+            </a>
+            <div class="header-maps__out" onclick="window.close();"></div>
+        </div>
+        <div class="maps-select__box">
+            <div class="select__menu select__menu-maps">
+                <div class="select__menu-item select__item1 select__menu-hidden">
+                    <h4 class="select__menu-title">Откуда</h4>
+                    <p class="select__menu-text select__menu-text_up">Москва</p>
+                </div>
+                <div class="select__menu-item select__item2">
+                    <h4 class="select__menu-title select__menu-title_up header-maps__menu-title">Куда</h4>
+                </div>
+                <div class="select__menu-item select__item3 select__menu-hidden">
+                    <h4 class="select__menu-title select__menu-title_up">вылет</h4>
+                </div>
+                <div class="select__menu-item select__item4 select__menu-hidden">
+                    <h4 class="select__menu-title">На сколько</h4>
+                    <p class="select__menu-text">9 - 12 ночей</p>
+                </div>
+                <div class="select__menu-item select__item5 select__menu-item_ch select__menu-hidden">
+                    <h4 class="select__menu-title">Туристы</h4>
+                    <p class="select__menu-text">2 + 0</p>
+                </div>
+                <button class="button select__button maps__button" type="button"><span
+                        class="maps__button-text">подобрать</span>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="variants__right maps__filters-button">
+                <button class="variants__right-button maps__top-button" type="button">Очистить</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-maps">
+        <div class="maps-image">
+            <div class="maps__radio-group">
+                <form action="#!" class="maps__form">
+
+                    <div class="checked">
+                        <input id="85000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="85000">
+                            <span class="maps__radio-fake maps-85"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+                        <div class="maps__item maps__item-image1">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.5</a>
+                                    <p class="maps__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Лето 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>85 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checked">
+                        <input id="45000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="45000">
+                            <span class="maps__radio-fake maps-45"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+                        <div class="maps__item maps__item-image2">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.2</a>
+                                    <p class="maps__comment-text">350 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Осень 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>45 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checked">
+                        <input id="80000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="80000">
+                            <span class="maps__radio-fake maps-80"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+                        <div class="maps__item maps__item-image3">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.2</a>
+                                    <p class="maps__comment-text">390 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Лето 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>80 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checked">
+                        <input id="68000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="68000">
+                            <span class="maps__radio-fake maps-68"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+                        <div class="maps__item maps__item-image4">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.4</a>
+                                    <p class="maps__comment-text">270 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Лето 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>68 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checked">
+                        <input id="40000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="40000">
+                            <span class="maps__radio-fake maps-40"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+                        <div class="maps__item maps__item-image5">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.1</a>
+                                    <p class="maps__comment-text">250 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Зима 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>40 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checked">
+                        <input id="90000" type="radio" name="group" class="maps__stock-radio">
+                        <label class="maps__label" for="90000">
+                            <span class="maps__radio-fake maps-90"><img class="maps__radio-image"
+                                    src="./img/maps/union.svg" alt="union"></span>
+                        </label>
+
+                        <div class="maps__item maps__item-image6">
+                            <div class="maps__item-image"></div>
+                            <div class="maps__item-title">
+                                <p class="maps__text"><a class="maps__text-link" href="#!">Греция</a>,
+                                    остров
+                                    Родос
+                                </p>
+                                <h4 class="maps__header header-card">Casa Cook</h4>
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <img src="./img/variants/star.svg" alt="star">
+                                <div class="maps__comments">
+                                    <a href="#!" class="maps__comment-number">8.9</a>
+                                    <p class="maps__comment-text">280 отзывов</p>
+                                </div>
+                            </div>
+                            <div class="maps__item-left">
+                                <p class="maps__item-calendar">3.05 - 8.05.2024 (6&nbsp;дней)</p>
+                                <p class="maps__item-saloon">All&nbsp;inclusive ultra</p>
+                            </div>
+                            <div class="maps__item-right">
+                                <p class="maps__item-info">близко к центру</p>
+                                <p class="maps__item-info">3 бассейна при отеле</p>
+                                <p class="maps__item-info">рекомендуем для пар</p>
+                                <p class="maps__item-info">частный пляж</p>
+                            </div>
+                            <div class="maps__item-year">
+                                <a class="maps__year-link" href="#!">Весна 2024</a>
+
+                                <div class="maps__item-detailed">
+                                    <p class="maps__item-price"><span>90 000 ₽</span>/ за 1</p>
+                                    <button class="button maps__card-button" type="button">подробнее
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white"
+                                                stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                            <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="maps__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/maps.js"></script>
+</body>
+
+</html>
