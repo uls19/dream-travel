@@ -7,6 +7,8 @@ mask.remove();
   }, 600);
   });
 
+
+  //очистить карту
   const resetBtm = document.querySelector('.maps__top-button');
   const formMaps = document.querySelector('.maps__form');
   resetBtm.addEventListener('click', (e) => {

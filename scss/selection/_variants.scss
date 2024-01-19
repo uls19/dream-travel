@@ -24,6 +24,7 @@
 .variants__header {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 20px;
     color: $black-1;
     font-weight: 600;
 
@@ -43,6 +44,7 @@
 
     @include mediaMobile {
         text-align: left;
+        font-size: 18px;
     }
 }
 

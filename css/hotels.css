@@ -1568,6 +1568,7 @@ input[type=search]::placeholder {
 .variants__header {
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 20px;
   color: #1C1C1C;
   font-weight: 600;
 }
@@ -1588,6 +1589,7 @@ input[type=search]::placeholder {
 @media screen and (max-width: 576px) {
   .variants__header {
     text-align: left;
+    font-size: 18px;
   }
 }
 
