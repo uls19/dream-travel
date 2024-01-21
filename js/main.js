@@ -1,6 +1,5 @@
 
 //кнопки слайдера
-
   const swiperEl = document.querySelector(".lastMinute");
   const buttonNt = document.querySelector(".last-minute__button-next");
   const buttonPv = document.querySelector(".last-minute__button-prev");

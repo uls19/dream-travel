@@ -64,6 +64,10 @@
     }
 }
 
+.main-maps {
+    overflow-y: hidden;
+}
+
 .maps-select__box {
     display: flex;
     justify-content: space-between;
@@ -103,7 +107,7 @@
     }
 }
 
-.header-maps__menu-title {
+.country-color {
 
     @include mediaTablet {
         line-height: normal;

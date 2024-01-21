@@ -99,6 +99,10 @@ legend {
   font-family: "Chandra";
   src: url("./../fonts/Chandra.ttf") format("truetype"), url("./../fonts/HELLO-CHANDRA-BF64bcefa81499d.woff") format("woff");
 }
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #1C1C1C;
@@ -574,7 +578,7 @@ body {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 5;
+  z-index: 15;
 }
 @media screen and (max-width: 1248px) {
   .top-before {
@@ -845,13 +849,8 @@ body {
     grid-template-areas: "item1 item1" "item2 item2" "item3 item3" "item4 item5" "button button";
     margin-top: 110px;
     padding: 0px 24px 5px;
-    width: 470px;
-    height: 320px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .select__menu {
     width: 300px;
+    height: 320px;
   }
 }
 
@@ -914,11 +913,12 @@ body {
 }
 
 .select__menu-title {
-  color: #A1A1A1;
+  color: #1C1C1C;
   font-size: 12px;
   font-weight: 400;
 }
 .select__menu-title_up {
+  color: #A1A1A1;
   font-size: 16px;
   font-weight: 400;
   line-height: 2.5;
@@ -1061,7 +1061,7 @@ body {
   display: none;
   grid-column: 1/2;
   grid-row: 1/2;
-  padding-left: 52px;
+  padding-left: 45px;
   font-size: 16px;
 }
 @media screen and (max-width: 984px) {

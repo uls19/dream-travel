@@ -111,13 +111,10 @@
             "button button";
         margin-top: 110px;
         padding: 0px 24px 5px;
-        width: 470px;
+        width: 300px;
         height: 320px;
     }
 
-    @include mediaMobile {
-        width: 300px;
-    }
 }
 
 .select__menu-item {
@@ -180,12 +177,12 @@
 
 
 .select__menu-title {
-    color: $grey-text;
+    color: $black-1;
     font-size: 12px;
     font-weight: 400;
 
     &_up {
-
+        color: $grey-text;
         font-size: 16px;
         font-weight: 400;
         line-height: 2.5;

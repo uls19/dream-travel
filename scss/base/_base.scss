@@ -24,6 +24,9 @@
 }
 
 
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: $fonts-main;
     color: $black-1;

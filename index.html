@@ -42,8 +42,8 @@
                         <p class="header__phone-number">+ 8 (495) 000-00-00<br>+ 8 (925) 000-00-00</p>
                     </div>
                     <a href="#!">
-                        <svg class="header__nav-svg button-location" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__nav-svg button-location" width="26" height="26" viewBox="0 0 26 26"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M13 14.5492C14.8667 14.5492 16.38 13.0359 16.38 11.1692C16.38 9.30243 14.8667 7.78915 13 7.78915C11.1333 7.78915 9.62 9.30243 9.62 11.1692C9.62 13.0359 11.1333 14.5492 13 14.5492Z"
                                 stroke="#1C1C1C" stroke-width="1.5" />
@@ -208,7 +208,7 @@
                 <p class="select__menu-text select__menu-text_up">Москва</p>
             </div>
             <div class="select__menu-item select__item2">
-                <h4 class="select__menu-title select__menu-title_up">Куда</h4>
+                <h4 class="select__menu-title select__menu-title_up country-color">Куда</h4>
             </div>
             <div class="select__menu-item select__item3">
                 <h4 class="select__menu-title select__menu-title_up">вылет</h4>
@@ -231,6 +231,158 @@
             </button>
         </div>
     </section>
+    <div class="section__po-pup">
+        <div class="countries__main">
+            <form action="#!" class="form__countries">
+                <div class="countries-top">
+                    <div class="countries__radio-favorites">
+                        <h4 class="countries__title">Популярные</h4>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="0" checked="checked">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Турция</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="1">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Египет</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="2">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Мальдивы</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="3">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">ОАЭ</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="4">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Куба</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="5">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Шри-Ланка</span>
+                        </label>
+                    </div>
+
+                    <div class="countries__radio-all">
+                        <h4 class="countries__title">Все страны</h4>
+                        <div class="countries__all-box">
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="0">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Абхазия</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="1">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Азербайджан</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="2">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Армения</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="3">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Беларусь</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="4">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Венесуэла</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="5">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Вьетнам</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="6">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Греция</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="7">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Грузия</span>
+                        </label>
+
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="8">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Турция</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="9">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Египет</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="10">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Мальдивы</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="11">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">ОАЭ</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="12">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Куба</span>
+                        </label>
+                        <label class="countries__label">
+                            <input type="radio" name="favorites" class="countries__stock-radio"
+                                onchange="updateBtnState()" value="13">
+                            <span class="countries__radio-fake"></span>
+                            <span class="countries__header-link">Шри-Ланка</span>
+                        </label>
+                    </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="countries-bottom">
+                <button class="button countries-reset" id="reset-countries">Очистить</button>
+                <button class="button countries-apply">выбрать
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
     <main class="main">
         <section class="container last-minute none">
             <div class="last-minute__top">
@@ -1241,6 +1393,7 @@
 
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./js/menu-top.js"></script>
+    <script src="./js/po-pup.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
