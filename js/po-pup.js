@@ -62,3 +62,9 @@ btnApp.addEventListener("click", function () {
   poPup0.classList.toggle("block__show");
   headPop0.classList.toggle('block__color');
 });
+
+const outCountry =document.querySelector('.countries__out');//скрываем блок при клике "выйти"
+outCountry.addEventListener("click", function () {
+  poPup0.classList.toggle("block__show");
+  headPop0.classList.toggle('block__color');
+});

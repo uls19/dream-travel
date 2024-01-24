@@ -1051,7 +1051,7 @@ body {
   top: -230px;
   left: 34px;
   width: 384px;
-  height: 470px;
+  height: 436px;
   flex-shrink: 0;
   border-radius: 30px;
   background: #FFF;
@@ -1066,6 +1066,7 @@ body {
 }
 @media screen and (max-width: 984px) {
   .countries__main {
+    height: 496px;
     width: 300px;
     top: -428px;
     left: 0px;
@@ -1073,9 +1074,45 @@ body {
 }
 @media screen and (max-width: 576px) {
   .countries__main {
-    width: 300px;
     top: -530px;
-    left: 0px;
+  }
+}
+
+.countries__selection {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .countries__selection {
+    top: -242px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .countries__selection {
+    top: -346px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .countries__selection {
+    top: -518px;
+  }
+}
+
+.countries__minute-tours {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .countries__minute-tours {
+    top: -200px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .countries__minute-tours {
+    top: -360px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .countries__minute-tours {
+    top: -514px;
   }
 }
 
@@ -1090,9 +1127,49 @@ body {
 .countries-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 390px;
+  height: 356px;
   padding-top: 40px;
   border-bottom: 1px solid #D4D4D4;
+}
+@media screen and (max-width: 984px) {
+  .countries-top {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 72px 340px;
+    height: 414px;
+    padding-top: 0px;
+  }
+}
+
+.countries-top__box {
+  display: none;
+  grid-column: 1/3;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: normal;
+  border-bottom: 1px solid #D4D4D4;
+}
+@media screen and (max-width: 984px) {
+  .countries-top__box {
+    display: flex;
+  }
+}
+
+.countries__title_min {
+  color: #1C1C1C;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.countries__out {
+  margin-right: 20px;
+  margin-left: 80px;
+  background-image: url(./../img/out.svg);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 26px;
 }
 
 .countries__radio-favorites {
@@ -1100,6 +1177,8 @@ body {
 }
 @media screen and (max-width: 984px) {
   .countries__radio-favorites {
+    grid-column: 1/2;
+    grid-row: 2/3;
     padding-left: 20px;
   }
 }
@@ -1110,15 +1189,22 @@ body {
 }
 @media screen and (max-width: 984px) {
   .countries__radio-all {
+    grid-column: 2/3;
+    grid-row: 2/3;
     padding-left: 0px;
     padding-right: 5px;
   }
 }
 
 .countries__all-box {
-  max-height: 316px;
+  max-height: 282px;
   width: 100%;
   overflow-y: scroll;
+}
+@media screen and (max-width: 984px) {
+  .countries__all-box {
+    max-height: 294px;
+  }
 }
 
 .countries__all-box::-webkit-scrollbar {
@@ -1135,6 +1221,11 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 13px;
+}
+@media screen and (max-width: 984px) {
+  .countries__title {
+    padding-top: 13px;
+  }
 }
 
 .countries__label {
@@ -1272,6 +1363,248 @@ body {
   .country-maps {
     top: 0px;
   }
+}
+
+.calendar__main {
+  display: none;
+  position: absolute;
+  top: -230px;
+  left: 200px;
+  height: 436px;
+  width: 384px;
+  padding-top: 50px;
+  border-radius: 30px;
+  background: #FFF;
+  /* тень под меню */
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
+  z-index: 7;
+}
+@media screen and (max-width: 984px) {
+  .calendar__main {
+    padding-top: 0px;
+    height: 496px;
+    width: 300px;
+    top: -428px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .calendar__main {
+    top: -530px;
+  }
+}
+
+.calendar__selection {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .calendar__selection {
+    top: -242px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .calendar__selection {
+    top: -346px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .calendar__selection {
+    top: -518px;
+  }
+}
+
+.calendar__minute-tours {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .calendar__minute-tours {
+    top: -200px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .calendar__minute-tours {
+    top: -360px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .calendar__minute-tours {
+    top: -514px;
+  }
+}
+
+.block__show1 {
+  display: block;
+}
+
+.block__color1 {
+  color: #1C1C1C;
+}
+
+.calendar-top__box {
+  display: none;
+  align-items: center;
+  height: 72px;
+  justify-content: flex-end;
+  line-height: normal;
+  border-bottom: 1px solid #D4D4D4;
+}
+@media screen and (max-width: 984px) {
+  .calendar-top__box {
+    display: flex;
+  }
+}
+
+.calendar__title_min {
+  color: #1C1C1C;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.calendar__out {
+  margin-right: 20px;
+  margin-left: 80px;
+  background-image: url(./../img/out.svg);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+
+.vanilla-calendar {
+  height: 286px;
+  width: 244px;
+  padding: 0;
+  margin: 0 auto 20px;
+}
+@media screen and (max-width: 984px) {
+  .vanilla-calendar {
+    margin: 27px auto;
+  }
+}
+
+[data-calendar-theme=light] .vanilla-calendar-arrow {
+  width: 32px;
+  height: 32px;
+  top: -20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid #D4D4D4;
+}
+[data-calendar-theme=light] .vanilla-calendar-arrow:hover {
+  background-color: #F8F8F8;
+}
+
+.vanilla-calendar-header {
+  margin: 0;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-arrow:before {
+  width: 20px;
+  inset: 5px;
+}
+
+.vanilla-calendar-header__content {
+  padding-bottom: 31px;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-month,
+[data-calendar-theme=light] .vanilla-calendar-year {
+  color: #1C1C1C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-week__day {
+  color: #1C1C1C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn {
+  color: #585858;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+[data-calendar-theme=light] .vanilla-calendar-day__btn_disabled {
+  color: #cbd5e1;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_selected:hover {
+  color: #1C1C1C;
+  border: 2px solid #463998;
+  background-color: #FFF;
+}
+
+.vanilla-calendar-day_hover-first .vanilla-calendar-day__btn,
+.vanilla-calendar-day_hover-last .vanilla-calendar-day__btn {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected:hover,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected:hover {
+  background-color: #FFF;
+  color: #1C1C1C;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected:hover,
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected:hover {
+  background-color: #E7E4FC;
+  color: #585858;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected,
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected:hover {
+  background-color: #E7E4FC;
+  color: #585858;
+  border: none;
+}
+
+.calendar-line {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid #D4D4D4;
+}
+
+.calen-reset {
+  color: #A1A1A1;
+  font-weight: 500;
+  border: none;
+}
+.calen-reset:hover {
+  background: #FFF;
+}
+
+.calen-apply {
+  width: 144px;
+  border-radius: 30px;
+  background: #1C1C1C;
+  padding: 11px 24px 10px;
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  border-color: #1C1C1C;
+}
+.calen-apply:hover {
+  background: #000;
+  border-color: #000;
 }
 
 .info-nav {
