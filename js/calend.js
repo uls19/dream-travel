@@ -60,6 +60,7 @@ const options = {
       day: 'multiple-ranged',
     },
     visibility: {
+      weekend: false,
       daysOutside: false,
     },
   },

@@ -215,7 +215,7 @@
                 <h4 class="select__menu-title select__menu-title_up calen-color">вылет</h4>
             </div>
             <div class="select__menu-item select__item4">
-                <h4 class="select__menu-title">На сколько</h4>
+                <h4 class="select__menu-title period-color">На сколько</h4>
                 <p class="select__menu-text">9 - 12 ночей</p>
             </div>
             <div class="select__menu-item select__item5 select__menu-item_ch">
@@ -407,6 +407,27 @@
                 </button>
             </div>
         </div>
+
+        <div class="period__main period__selection ">
+            <div class="period-top__box">
+                <h4 class="period__title_min">Количество дней</h4>
+                <div class="period__out"></div>
+            </div>
+            <div id="period"></div>
+            <div class="period-line">
+                <button class="button period-reset">Очистить</button>
+                <button class="button period-apply">выбрать
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999978 1.17849L11.9998 11.8215" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path d="M3.75 11.8214L12 11.8214" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                        <path d="M12 11.8214L12 4.23685" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="info-nav">
@@ -451,13 +472,15 @@
                         <form action="#!" class="form">
                             <div class="filters__radio-top">
                                 <label class="filters__label-top">
-                                    <input type="radio" name="group1" class="filters__stock-radio" onchange="updateButtonState()" value="0" checked="checked">
+                                    <input type="radio" name="group1" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0" checked="checked">
                                     <span class="filters__radio-fake radio-fake-1"></span>
                                     <span class="header__stock-link">на человека</span>
                                 </label>
 
                                 <label class="filters__label-top">
-                                    <input type="radio" name="group1" class="filters__stock-radio" onchange="updateButtonState()" value="1"> 
+                                    <input type="radio" name="group1" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">на всех</span>
                                 </label>
@@ -466,22 +489,26 @@
                                 <h4 class="filters__title">предложение</h4>
 
                                 <label class="filters__label">
-                                    <input type="radio" name="group2" class="filters__stock-radio" onchange="updateButtonState()" value="0"> 
+                                    <input type="radio" name="group2" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Горящие туры</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group2" class="filters__stock-radio" onchange="updateButtonState()" value="1">
+                                    <input type="radio" name="group2" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Зима 2023/2024</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group2" class="filters__stock-radio" onchange="updateButtonState()" value="2">
+                                    <input type="radio" name="group2" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="2">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Весна 2024</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group2" class="filters__stock-radio" onchange="updateButtonState()" value="3">
+                                    <input type="radio" name="group2" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="3">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Лето 2024</span>
                                 </label>
@@ -492,28 +519,33 @@
                                 <h4 class="filters__title">выбрано для вас</h4>
 
                                 <label class="filters__label">
-                                    <input type="radio" name="group3" class="filters__stock-radio" onchange="updateButtonState()" value="0">
+                                    <input type="radio" name="group3" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Все включено</span>
 
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group3" class="filters__stock-radio" onchange="updateButtonState()"   value="1">
+                                    <input type="radio" name="group3" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Отель для взрослых</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group3" class="filters__stock-radio" onchange="updateButtonState()" value="2">
+                                    <input type="radio" name="group3" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="2">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Песчаный пляж</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group3" class="filters__stock-radio" onchange="updateButtonState()" value="3">
+                                    <input type="radio" name="group3" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="3">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">СПА</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group3" class="filters__stock-radio" onchange="updateButtonState()"  value="4">
+                                    <input type="radio" name="group3" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="4">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link"> Стандарт отеля от 4
                                         звезд</span>
@@ -527,13 +559,13 @@
                                 <div class="filters-price__inputs">
                                     <label class="filters-price__lable">
                                         <span class="filters-price__text">От</span>
-                                        <input type="number" min="1" max="31" placeholder="3" class="filters-price__input"
-                                            id="input-0">
+                                        <input type="number" min="1" max="31" placeholder="3"
+                                            class="filters-price__input" id="input-0">
                                     </label>
                                     <label class="filters-price__lable filters__lable-right">
                                         <span class="filters-price__text">до</span>
-                                        <input type="number" min="1" max="31" placeholder="15" class="filters-price__input"
-                                            id="input-1">
+                                        <input type="number" min="1" max="31" placeholder="15"
+                                            class="filters-price__input" id="input-1">
                                         <span class="filters-price__text">ночей</span>
                                     </label>
                                 </div>
@@ -543,27 +575,32 @@
                                 <h4 class="filters__title">Еда</h4>
 
                                 <label class="filters__label">
-                                    <input type="radio" name="group4" class="filters__stock-radio" onchange="updateButtonState()" value="0">
+                                    <input type="radio" name="group4" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0">
                                     <span class="filters__radio-fake filters__fake-check"></span>
                                     <span class="header__stock-link">2-х разовое питание</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group4" class="filters__stock-radio" onchange="updateButtonState()" value="1" checked="checked">
+                                    <input type="radio" name="group4" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1" checked="checked">
                                     <span class="filters__radio-fake filters__fake-check"></span>
                                     <span class="header__stock-link">3-разовое питание</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group4" class="filters__stock-radio" onchange="updateButtonState()" value="2">
+                                    <input type="radio" name="group4" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="2">
                                     <span class="filters__radio-fake filters__fake-check"></span>
                                     <span class="header__stock-link">Все включено</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group4" class="filters__stock-radio" onchange="updateButtonState()" value="3">
+                                    <input type="radio" name="group4" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="3">
                                     <span class="filters__radio-fake filters__fake-check"></span>
                                     <span class="header__stock-link">Без еды</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group4" class="filters__stock-radio" onchange="updateButtonState()" value="4" >
+                                    <input type="radio" name="group4" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="4">
                                     <span class="filters__radio-fake filters__fake-check"></span>
                                     <span class="header__stock-link"> Завтраки</span>
                                 </label>
@@ -573,51 +610,58 @@
                                 <h4 class="filters__title">рейтинг отеля</h4>
 
                                 <label class="filters__label">
-                                    <input type="radio" name="group5" class="filters__stock-radio" onchange="updateButtonState()"  value="0">
+                                    <input type="radio" name="group5" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">от 5<img class="filters__radio-image"
                                             src="./img/star.svg" alt="star"></span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group5" class="filters__stock-radio" onchange="updateButtonState()" value="1">
+                                    <input type="radio" name="group5" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">от 4<img class="filters__radio-image"
                                             src="./img/star.svg" alt="star"></span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group5" class="filters__stock-radio" onchange="updateButtonState()"   value="2">
+                                    <input type="radio" name="group5" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="2">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">от 3<img class="filters__radio-image"
                                             src="./img/star.svg" alt="star"></span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group5" class="filters__stock-radio" onchange="updateButtonState()" value="3" checked="checked">
+                                    <input type="radio" name="group5" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="3" checked="checked">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">любой</span>
                                 </label>
                             </div>
-                       
+
                             <div class="filters__radio-group6">
                                 <h4 class="filters__title">удобства</h4>
 
                                 <label class="filters__label">
-                                    <input type="radio" name="group6" class="filters__stock-radio" onchange="updateButtonState()" value="0">
+                                    <input type="radio" name="group6" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="0">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Анимации для детей</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group6" class="filters__stock-radio" onchange="updateButtonState()" value="1">
+                                    <input type="radio" name="group6" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="1">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Никаких ночных поездок</span>
                                 </label>
                                 <label class="filters__label">
-                                    <input type="radio" name="group6" class="filters__stock-radio" onchange="updateButtonState()" value="2">
+                                    <input type="radio" name="group6" class="filters__stock-radio"
+                                        onchange="updateButtonState()" value="2">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Близко к центру</span>
                                 </label>
                                 <label class="filters__label">
                                     <input type="radio" name="group6" class="filters__stock-radio"
-                                    onchange="updateButtonState()"  value="3">
+                                        onchange="updateButtonState()" value="3">
                                     <span class="filters__radio-fake"></span>
                                     <span class="header__stock-link">Рядом с аэропортом</span>
                                 </label>
@@ -2006,12 +2050,13 @@
     <script src="./js/menu-top.js"></script>
     <script src="./js/po-pup.js"></script>
     <script src="./js/calend.js"></script>
+    <script src="./js/period.js"></script>
     <script src="./nouislider/nouislider.min.js"></script>
-    <script src="./js/selection.js"></script> 
-  
-    
-   
-    
+    <script src="./js/selection.js"></script>
+
+
+
+
 </body>
 
 </html>

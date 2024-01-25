@@ -381,13 +381,17 @@
 .checked .maps__item-image4,
 .checked .maps__item-image5,
 .checked .maps__item-image6 {
+
     display: none;
-}
+  
+ }
 
 .checked input[type=radio]:checked~.maps__item-image1 {
+   
     display: grid;
     top: 105px;
     left: -160px;
+    
 
     @include mediaDesktopTab {
         top: 270px;
@@ -401,6 +405,7 @@
 }
 
 .checked input[type=radio]:checked~.maps__item-image2 {
+
     display: grid;
     top: 162px;
     left: -340px;
@@ -417,6 +422,7 @@
 }
 
 .checked input[type=radio]:checked~.maps__item-image3 {
+
     display: grid;
     top: 188px;
     left: -82px;

@@ -74,6 +74,25 @@
     }
 }
 
+.countries__maps {
+    top: -20px;
+
+    @include mediaDesktopTab {
+        top: -100px
+    }
+
+    @include mediaTablet {
+        top: -72px;
+
+    }
+
+    @include mediaMobile {
+        top: -125px;
+
+    }
+}
+
+
 .block__show {
     display: block;
 }
