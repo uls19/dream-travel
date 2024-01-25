@@ -4,7 +4,7 @@
     margin: 0 auto;
 
     @include mediaTablet {
-        width: 300px; 
+        width: 300px;
     }
 }
 
@@ -23,95 +23,93 @@
     z-index: 7;
 
     @include mediaDesktopTab {
-        left: 0px;  
+        left: 0px;
     }
 
-@include mediaTablet {
-    height: 496px;
-    width: 300px; 
-    top: -428px;
-    left: 0px;
-}
+    @include mediaTablet {
+        height: 496px;
+        width: 300px;
+        top: -428px;
+        left: 0px;
+    }
 
-@include mediaMobile {
-    top: -530px;
-}
+    @include mediaMobile {
+        top: -530px;
+    }
 }
 
 .countries__selection {
-    top:-70px;
+    top: -70px;
 
     @include mediaDesktopTab {
-       top:-242px 
+        top: -242px
     }
-   
-@include mediaTablet {
-    top:-346px;
-  
-} 
 
-@include mediaMobile {
-    top:-518px;
-  
-} 
+    @include mediaTablet {
+        top: -346px;
+
+    }
+
+    @include mediaMobile {
+        top: -518px;
+
+    }
 }
 
 .countries__minute-tours {
-    top:-70px;
+    top: -70px;
 
     @include mediaDesktopTab {
-       top:-200px 
+        top: -200px
     }
-   
-@include mediaTablet {
-    top:-360px;
-  
-} 
 
-@include mediaMobile {
-    top:-514px;
-  
-} 
+    @include mediaTablet {
+        top: -360px;
+
+    }
+
+    @include mediaMobile {
+        top: -514px;
+
+    }
 }
 
-
-
-
 .block__show {
-    display: block ;
+    display: block;
 }
 
 .block__color {
     color: $black-1;
+    font-weight: 500;
 }
 
 .countries-top {
-display: grid;
-grid-template-columns: 1fr 1fr;
-height: 356px;
-padding-top: 40px;
-border-bottom: 1px solid $line;
-
-
-@include mediaTablet {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 72px 340px; 
-    height: 414px;
-    padding-top:0px;
-}
+    height: 356px;
+    padding-top: 40px;
+    border-bottom: 1px solid $line;
+
+
+    @include mediaTablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 72px 340px;
+        height: 414px;
+        padding-top: 0px;
+    }
 }
 
 .countries-top__box {
-    display:none;
+    display: none;
     grid-column: 1/3;
-    align-items: center; 
+    align-items: center;
     justify-content: flex-end;
     line-height: normal;
     border-bottom: 1px solid #D4D4D4;
 
     @include mediaTablet {
         display: flex;
-       
+
     }
 }
 
@@ -134,31 +132,28 @@ border-bottom: 1px solid $line;
 
 }
 
-
-
-
 .countries__radio-favorites {
     padding-left: 40px;
 
     @include mediaTablet {
         grid-column: 1/2;
-       grid-row: 2/3;
-       padding-left: 20px; 
-       
+        grid-row: 2/3;
+        padding-left: 20px;
+
     }
 }
 
 .countries__radio-all {
     padding-left: 10px;
-    padding-right: 10px; 
-    
+    padding-right: 10px;
+
     @include mediaTablet {
         grid-column: 2/3;
         grid-row: 2/3;
-        padding-left: 0px; 
-        padding-right: 5px; 
+        padding-left: 0px;
+        padding-right: 5px;
 
-     }
+    }
 }
 
 .countries__all-box {
@@ -168,26 +163,27 @@ border-bottom: 1px solid $line;
 
     @include mediaTablet {
         max-height: 294px;
-     }
+    }
 }
 
 .countries__all-box::-webkit-scrollbar {
     width: 4px;
 }
+
 .countries__all-box::-webkit-scrollbar-thumb {
     background: $grey-text;
     border-radius: 2px;
 }
 
 .countries__title {
-color: $black-1;
-font-size: 16px;
-font-weight: 500;
-padding-bottom: 13px;
+    color: $black-1;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 13px;
 
-@include mediaTablet {
-    padding-top: 13px;
-}
+    @include mediaTablet {
+        padding-top: 13px;
+    }
 }
 
 .countries__label {
@@ -208,9 +204,8 @@ padding-bottom: 13px;
     width: 1px;
 }
 
-
 .countries__radio-fake {
-width: 26px;
+    width: 26px;
     height: 26px;
     flex-shrink: 0;
     border-radius: 30px;
@@ -218,7 +213,7 @@ width: 26px;
     background: $white;
 }
 
-.countries__stock-radio:checked + .countries__radio-fake {
+.countries__stock-radio:checked+.countries__radio-fake {
     border: none;
     background-image: url(./../img/radio_check.svg);
     background-repeat: no-repeat;
@@ -226,10 +221,11 @@ width: 26px;
 }
 
 .countries__header-link {
-color: $black-1;
-font-size: 14px;
-font-weight: 300;
-line-height: 39px; /* 278.571% */
+    color: $black-1;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 39px;
+    /* 278.571% */
 }
 
 .countries-bottom {
@@ -242,8 +238,8 @@ line-height: 39px; /* 278.571% */
 
     @include mediaTablet {
         padding-left: 20px;
-        padding-right: 20px; 
-     }
+        padding-right: 20px;
+    }
 }
 
 .countries-reset {
@@ -252,14 +248,13 @@ line-height: 39px; /* 278.571% */
     border: none;
 
     &:hover {
-        background:$white;
-}
+        background: $white;
+    }
 }
 
 .active__button {
     color: #1C1C1C;
 }
-
 
 .countries-apply {
     width: 144px;
@@ -272,57 +267,61 @@ line-height: 39px; /* 278.571% */
     border-color: $black-1;
 
     &:hover {
-        background: $black;  
+        background: $black;
         border-color: $black;
     }
 }
 
 .country-page2 {
-    top:-70px;
-  
+    top: -70px;
+
     @include mediaDesktopTab {
-     top:-232px;
- } 
- @include mediaTablet {
-     top:-346px;
- 
- }
- @include mediaMobile {
-     top:-490px;
- 
- }
- 
- }
+        top: -232px;
+    }
 
- .country-page3 {
+    @include mediaTablet {
+        top: -346px;
 
-    top:-70px;
-  
+    }
+
+    @include mediaMobile {
+        top: -490px;
+
+    }
+
+}
+
+.country-page3 {
+
+    top: -70px;
+
     @include mediaDesktopTab {
-     top:-232px;
- } 
- @include mediaTablet {
-     top:-370px;
- 
- }
- @include mediaMobile {
-     top:-490px;
- 
- } 
+        top: -232px;
+    }
 
- }
+    @include mediaTablet {
+        top: -370px;
 
- .country-maps {
-    top:-16px;
+    }
+
+    @include mediaMobile {
+        top: -490px;
+
+    }
+
+}
+
+.country-maps {
+    top: -16px;
     left: -30px;
 
-    @include mediaDesktopTab {   
-     top:-90px;
-     left: 0px;
- } 
- @include mediaTablet {
-     top: 0px;
- 
- }
+    @include mediaDesktopTab {
+        top: -90px;
+        left: 0px;
+    }
 
- }
+    @include mediaTablet {
+        top: 0px;
+
+    }
+}

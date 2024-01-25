@@ -1123,6 +1123,7 @@ body {
 
 .block__color {
   color: #1C1C1C;
+  font-weight: 500;
 }
 
 .countries-top {
@@ -1266,7 +1267,8 @@ body {
   color: #1C1C1C;
   font-size: 14px;
   font-weight: 300;
-  line-height: 39px; /* 278.571% */
+  line-height: 39px;
+  /* 278.571% */
 }
 
 .countries-bottom {
@@ -1437,10 +1439,6 @@ body {
   display: block;
 }
 
-.block__color1 {
-  color: #1C1C1C;
-}
-
 .calendar-top__box {
   display: none;
   align-items: center;
@@ -1591,6 +1589,11 @@ body {
 }
 .calen-reset:hover {
   background: #FFF;
+}
+
+.block__color1 {
+  color: #1C1C1C;
+  font-weight: 500;
 }
 
 .calen-apply {

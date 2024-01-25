@@ -12,65 +12,64 @@
     box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
     z-index: 7;
 
-   @include mediaTablet {
-    padding-top: 0px;
-    height: 496px;
-    width: 300px;
-    top: -428px;
-    left: 0px;
+    @include mediaTablet {
+        padding-top: 0px;
+        height: 496px;
+        width: 300px;
+        top: -428px;
+        left: 0px;
 
-}
-@include mediaMobile {
-    top: -530px;
-}
+    }
+
+    @include mediaMobile {
+        top: -530px;
+    }
+
 }
 
 .calendar__selection {
-    top:-70px;
-    @include mediaDesktopTab {
-        top:-242px 
-     }
-   
-@include mediaTablet {
-  top:-346px;
-} 
+    top: -70px;
 
-@include mediaMobile {
-    top:-518px;
-  
-} 
+    @include mediaDesktopTab {
+        top: -242px
+    }
+
+    @include mediaTablet {
+        top: -346px;
+    }
+
+    @include mediaMobile {
+        top: -518px;
+
+    }
 
 }
 
 .calendar__minute-tours {
-    top:-70px;
+    top: -70px;
 
     @include mediaDesktopTab {
-       top:-200px 
+        top: -200px
     }
-   
-@include mediaTablet {
-    top:-360px;
-  
-} 
 
-@include mediaMobile {
-    top:-514px;
-  
-} 
+    @include mediaTablet {
+        top: -360px;
+
+    }
+
+    @include mediaMobile {
+        top: -514px;
+
+    }
 }
 
 .block__show1 {
     display: block;
 }
 
-
-.block__color1 {
-    color: $black-1;
-}
 .calendar-top__box {
-    display:none;
-    align-items: center; 
+    display: none;
+    align-items: center;
     height: 72px;
     justify-content: flex-end;
     line-height: normal;
@@ -78,7 +77,7 @@
 
     @include mediaTablet {
         display: flex;
-       
+
     }
 }
 
@@ -101,7 +100,6 @@
 
 }
 
-
 .vanilla-calendar {
     height: 286px;
     width: 244px;
@@ -109,24 +107,24 @@
     margin: 0 auto 20px;
 
     @include mediaTablet {
-      margin: 27px auto;
+        margin: 27px auto;
     }
 }
 
 [data-calendar-theme=light] .vanilla-calendar-arrow {
     width: 32px;
     height: 32px;
-    top:-20px;
-    flex-shrink: 0;  
+    top: -20px;
+    flex-shrink: 0;
     border-radius: 50%;
     border: 2px solid $line;
 
-    &:hover { 
-     background-color: $slide; 
+    &:hover {
+        background-color: $slide;
     }
 }
 
-.vanilla-calendar-header { 
+.vanilla-calendar-header {
     margin: 0;
 }
 
@@ -177,13 +175,12 @@
 
 .vanilla-calendar-day_hover-first .vanilla-calendar-day__btn,
 .vanilla-calendar-day_hover-last .vanilla-calendar-day__btn {
- 
+
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
-
 
 [data-calendar-theme=light] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected,
 [data-calendar-theme=light] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected,
@@ -199,35 +196,41 @@
 [data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected:hover,
 [data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected:hover {
 
-    background-color: #E7E4FC;;
+    background-color: #E7E4FC;
+    ;
     color: $grey;
 
 }
 
 [data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected,
 [data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected:hover {
-background-color:  #E7E4FC;
-color: $grey;
-border:none;
+    background-color: #E7E4FC;
+    color: $grey;
+    border: none;
 }
 
 .calendar-line {
-display: inline-flex;
-justify-content: space-evenly;
-align-items: center;
-height: 80px;
-width: 100%;
-border-top: 1px solid $line;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid $line;
 }
 
 .calen-reset {
-        color: $grey-text;
-        font-weight: 500;
-        border: none;
-    
-        &:hover {
-            background:$white;
-    }   
+    color: $grey-text;
+    font-weight: 500;
+    border: none;
+
+    &:hover {
+        background: $white;
+    }
+}
+
+.block__color1 {
+    color: $black-1;
+    font-weight: 500;
 }
 
 .calen-apply {
@@ -242,8 +245,8 @@ border-top: 1px solid $line;
     border-color: $black-1;
 
     &:hover {
-        background: $black;  
+        background: $black;
         border-color: $black;
-    } 
+    }
 
 }
