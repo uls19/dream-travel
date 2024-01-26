@@ -8,12 +8,25 @@
     background: rgba(0, 0, 0, 0.30);
     z-index: 15;
 
+    animation: shows 0.3s;
+
+    @keyframes shows {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
     @include mediaDesktopTab {
-        height: 768px; 
+        height: 768px;
     }
 
     @include mediaTablet {
-        height: 904px; 
+        height: 904px;
     }
 
     @include mediaMobile {
@@ -24,7 +37,8 @@
 .bgd__show {
     display: block;
 }
-.application{
+
+.application {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -41,12 +55,13 @@
 }
 
 .app__show {
-  display: flex;
+    display: flex;
 }
+
 .application__out {
     position: absolute;
     background-image: url(./../img/out.svg);
-    top:18px;
+    top: 18px;
     right: 18px;
     width: 26px;
     height: 26px;
@@ -60,28 +75,30 @@
 
 .application__title {
     color: $black;
-font-size: 24px;
-font-weight: 400;
-text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
 
-@include mediaMobile {
-    font-size: 20px; 
+    @include mediaMobile {
+        font-size: 20px;
+    }
 }
-}
+
 .application__title-italic {
     color: $black;
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
     @include mediaMobile {
-        font-size: 20px; 
+        font-size: 20px;
     }
 }
+
 .application__content-text {
     padding-top: 14px;
-    padding-bottom: 14px; 
+    padding-bottom: 14px;
 }
 
 .application__text {
@@ -89,25 +106,58 @@ text-transform: uppercase;
     font-size: 16px;
     font-weight: 300;
 }
+
 .application__form {
     display: flex;
     flex-direction: column;
-        row-gap: 24px;
+    row-gap: 24px;
 }
+
 .application__form-left {
     display: flex;
     flex-direction: column;
-    width: 220px; 
+    width: 220px;
 }
+
 .application__input {
     height: 20px;
-color: $black-1;
-font-size: 12px;
-font-weight: 400;
+    color: $black-1;
+    font-size: 12px;
+    font-weight: 400;
 }
+
+
+input.application__input::-webkit-input-placeholder {
+    color: #BDBDBD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input.application__input::-moz-placeholder {
+    color: #BDBDBD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input.application__input:-moz-placeholder {
+    color: #BDBDBD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input.application__input:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
 .application__line {
     height: 1px;
-    background:  #848484; 
+    background: #848484;
     margin-bottom: 9px;
 }
 
@@ -117,7 +167,7 @@ font-weight: 400;
     font-size: 16px;
     color: $white;
     border: none;
-    
+
     &:hover {
         background-color: $red-hov;
     }

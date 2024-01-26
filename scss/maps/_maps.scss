@@ -387,11 +387,10 @@
  }
 
 .checked input[type=radio]:checked~.maps__item-image1 {
-   
+
     display: grid;
     top: 105px;
     left: -160px;
-    
 
     @include mediaDesktopTab {
         top: 270px;
@@ -405,7 +404,7 @@
 }
 
 .checked input[type=radio]:checked~.maps__item-image2 {
-
+   
     display: grid;
     top: 162px;
     left: -340px;
@@ -492,6 +491,17 @@
 .checked input[type=radio]:checked~.maps__item-image4,
 .checked input[type=radio]:checked~.maps__item-image5,
 .checked input[type=radio]:checked~.maps__item-image6 {
+
+    animation: shows 1s;
+
+    @keyframes shows {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+        }
 
     @include mediaMobile {
         top: 375px;

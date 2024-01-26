@@ -579,6 +579,15 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 15;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1248px) {
   .top-before {
@@ -685,6 +694,30 @@ body {
 .application__input {
   height: 20px;
   color: #1C1C1C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input::-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input:-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input:-ms-input-placeholder {
+  color: #BDBDBD;
   font-size: 12px;
   font-weight: 400;
 }
@@ -1063,6 +1096,15 @@ body {
   /* тень под меню */
   box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
   z-index: 7;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1248px) {
   .countries__main {
@@ -1403,6 +1445,15 @@ body {
   background: #FFF;
   box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
   z-index: 7;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 984px) {
   .calendar__main {
@@ -1579,7 +1630,7 @@ body {
 
 #calendar .vanilla-calendar-day__btn_selected,
 #calendar .vanilla-calendar-day__btn_selected:hover {
-  background-color: #463998;
+  background-color: #af8f64;
 }
 
 .calendar-line {
@@ -1632,6 +1683,15 @@ body {
   background: #FFF;
   box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
   z-index: 7;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 984px) {
   .period__main {
@@ -1777,7 +1837,7 @@ body {
 
 #period .vanilla-calendar-day__btn_selected,
 #period .vanilla-calendar-day__btn_selected:hover {
-  background-color: #463998;
+  background-color: #af8f64;
 }
 
 .period-line {
@@ -2634,8 +2694,8 @@ body {
 }
 
 .filters {
+  display: none;
   position: absolute;
-  display: flex;
   justify-content: end;
   max-width: 1920px;
   margin: 0 auto;
@@ -2645,10 +2705,18 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 5;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .filters__content {
-  display: none;
   background: #FFF;
   max-width: 480px;
   /* тень под меню */
@@ -2656,7 +2724,7 @@ body {
 }
 
 .filters__show {
-  display: block;
+  display: flex;
 }
 
 .filters__top {

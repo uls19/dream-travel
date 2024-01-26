@@ -25,6 +25,7 @@
       }
 
   //слайдер код
+
   const swiperMinute = new Swiper(".lastMinute", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -67,14 +68,14 @@
       }
 
   const swiperHotel = new Swiper(".hotelSwiper", {
-    // speed: 300,
+    speed: 500,
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 0,
-      stretch: -30,
-      depth: 150,
+      rotate: 45,
+      stretch: -5,
+      depth: 100,
       modifier: 1,
       slideShadows: true,
     },

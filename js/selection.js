@@ -29,7 +29,7 @@ document.addEventListener("click", function (e) {
 
 //filters-popup-block
 const filterBtn = document.querySelector('.variants__right-button');
-const filterSelect = document.querySelector('.filters__content');
+const filterSelect = document.querySelector('.filters');
 
 // // вызываем элемент и скрываем если клик был за его пределами
 

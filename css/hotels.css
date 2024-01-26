@@ -579,6 +579,15 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 15;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1248px) {
   .top-before {
@@ -685,6 +694,30 @@ body {
 .application__input {
   height: 20px;
   color: #1C1C1C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input::-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input:-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input.application__input:-ms-input-placeholder {
+  color: #BDBDBD;
   font-size: 12px;
   font-weight: 400;
 }
