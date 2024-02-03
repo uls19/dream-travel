@@ -1703,7 +1703,7 @@ input.application__input:-ms-input-placeholder {
 }
 @media screen and (max-width: 576px) {
   .period__main {
-    top: -530px;
+    top: -420px;
   }
 }
 
@@ -1875,6 +1875,260 @@ input.application__input:-ms-input-placeholder {
 .period-apply:hover {
   background: #000;
   border-color: #000;
+}
+
+.quantity__main {
+  display: none;
+  position: absolute;
+  top: -230px;
+  left: 530px;
+  height: 224px;
+  width: 344px;
+  padding-top: 32px;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.2);
+  z-index: 7;
+  animation: shows 0.3s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 984px) {
+  .quantity__main {
+    padding-top: 0px;
+    height: 392px;
+    width: 300px;
+    top: -428px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quantity__main {
+    top: -420px;
+  }
+}
+
+.quantity__selection {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .quantity__selection {
+    top: -242px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .quantity__selection {
+    top: -346px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quantity__selection {
+    top: -484px;
+  }
+}
+
+.quantity__minute-tours {
+  top: -70px;
+}
+@media screen and (max-width: 1248px) {
+  .quantity__minute-tours {
+    top: -200px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .quantity__minute-tours {
+    top: -360px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quantity__minute-tours {
+    top: -490px;
+  }
+}
+
+.quantity__maps {
+  top: -20px;
+}
+@media screen and (max-width: 1248px) {
+  .quantity__maps {
+    top: -100px;
+  }
+}
+@media screen and (max-width: 984px) {
+  .quantity__maps {
+    top: -72px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .quantity__maps {
+    top: -125px;
+  }
+}
+
+.block__show3 {
+  display: block;
+}
+
+.quantity-top__box {
+  display: none;
+  align-items: center;
+  height: 72px;
+  justify-content: flex-end;
+  line-height: normal;
+  border-bottom: 1px solid #D4D4D4;
+}
+@media screen and (max-width: 984px) {
+  .quantity-top__box {
+    display: flex;
+  }
+}
+
+.quantity__title_min {
+  width: 168px;
+  color: #1C1C1C;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.quantity__out {
+  margin-right: 20px;
+  margin-left: 80px;
+  background-image: url(./../img/out.svg);
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+@media screen and (max-width: 984px) {
+  .quantity__out {
+    margin-left: 20px;
+  }
+}
+
+#quantity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  column-gap: 40px;
+  height: 112px;
+  width: 264px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.quantity__title {
+  color: rgb(88, 88, 88);
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.quantity-color {
+  color: #A1A1A1;
+}
+
+.quantity-line {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid #D4D4D4;
+}
+@media screen and (max-width: 984px) {
+  .quantity-line {
+    margin-top: 128px;
+  }
+}
+
+.quantity-apply {
+  width: 144px;
+  border-radius: 30px;
+  background: #1C1C1C;
+  padding: 11px 24px 10px;
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  border-color: #1C1C1C;
+}
+.quantity-apply:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.number {
+  display: inline-block;
+  position: relative;
+  width: 108px;
+}
+
+.quantity__number-top {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.quantity__number-bottom {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.number input[type=number] {
+  display: block;
+  height: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.number input[type=number]::-webkit-outer-spin-button,
+.number input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.number-minus {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 32px;
+  height: 32px;
+}
+
+.number-plus {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 32px;
+  height: 32px;
+}
+
+button img:hover {
+  box-shadow: 0px 0px 5px 0px rgba(43, 43, 51, 0.2);
+  border-radius: 50%;
+}
+
+.block__color3 {
+  color: #1C1C1C;
+  font-weight: 500;
 }
 
 .info-nav {
