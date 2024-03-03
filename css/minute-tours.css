@@ -278,6 +278,7 @@ body {
 }
 
 .header__nav-link {
+  position: relative;
   padding: 12px 0;
   color: #000;
   font-size: 14px;
@@ -294,8 +295,29 @@ body {
   line-height: normal;
   text-transform: uppercase;
 }
-.header__nav-link:hover {
-  text-decoration: underline;
+
+.header__nav-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 11px;
+  left: auto;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.header__nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header__nav-link_color::after {
+  background-color: #EC1C24;
 }
 
 .header__contacts {

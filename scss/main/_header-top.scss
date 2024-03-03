@@ -74,6 +74,7 @@
 }
 
 .header__nav-link {
+    position: relative;
     padding: 12px 0;
     color: $black;
     font-size: 14px;
@@ -91,11 +92,33 @@
         text-transform: uppercase;
 
     }
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
+
+.header__nav-link::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 11px;
+    left: auto;
+    width: 0;
+    height: 1px;
+    background-color: $black;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+   
+ }
+ 
+ .header__nav-link:hover:after {
+     width: 100%;
+     left: 0;
+ }
+
+ .header__nav-link_color::after {
+    background-color: $red;
+ }
+
 
 .header__contacts {
     display: flex;
