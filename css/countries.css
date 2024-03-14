@@ -426,7 +426,7 @@ body {
 }
 
 .header__nav-icon::before {
-  top: 7px;
+  top: 6px;
 }
 
 .header__nav-icon::after {
