@@ -107,17 +107,17 @@
     -webkit-transition: width .3s;
     -o-transition: width .3s;
     transition: width .3s;
-   
- }
- 
- .header__nav-link:hover:after {
-     width: 100%;
-     left: 0;
- }
 
- .header__nav-link_color::after {
+}
+
+.header__nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__nav-link_color::after {
     background-color: $red;
- }
+}
 
 
 .header__contacts {
@@ -134,28 +134,34 @@
 
 .header__button {
     margin-right: 20px;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: #af076c;
+    }
 }
 
 .header__nav-svg {
-    stroke: $black-1;
-    transition: stroke 0.2s ease-in-out;
+    stroke: $black;
+    transition: stroke 0.3s ease-in-out;
 
     &:hover {
-        stroke: $grey; 
+        stroke: $grey;
     }
 }
-.header__nav-phone, 
+
+.header__nav-phone,
 .header__nav-location {
     display: flex;
     position: absolute;
     opacity: 0;
-    flex-shrink: 0;  
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     background: $white;
-   box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
-   transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
+    transition: opacity 0.3s ease-in-out;
 }
 
 .header__nav-phone {
@@ -164,18 +170,19 @@
     height: 101px;
     top: 96px;
     right: 436px;
-  
+
     @include mediaDesktop {
         right: 310px;
     }
 }
 
-.header__phone-number, 
+.header__phone-number,
 .header__location {
-color: $black-1;
-font-size: 16px;
-font-weight: 400;
-line-height: 30px; /* 187.5% */
+    color: $black-1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
 }
 
 .phone__show {
@@ -183,7 +190,7 @@ line-height: 30px; /* 187.5% */
 }
 
 .header__nav-location {
-   
+
     width: 266px;
     height: 101px;
     top: 96px;
@@ -195,13 +202,41 @@ line-height: 30px; /* 187.5% */
 }
 
 .header__location {
-line-height: 21.5px; /* 134.375% */
+    line-height: 21.5px;
+    /* 134.375% */
 }
 
 .location__show {
     opacity: 1;
 }
 
+.header__nav-icon {
+display: block;
+position: relative;
+width: 43px;
+height: 1px;
+background: $black;
+
+}
+
+.header__nav-icon::before,
+.header__nav-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 43px;
+    height: 1px;
+    background: $black;   
+}
+
+.header__nav-icon::before {
+    top: 7px;
+}
+
+.header__nav-icon::after {
+    bottom: 6px;
+}
 
 .header__nav-burger {
     padding: 24px 0 24px 24px;
@@ -218,4 +253,3 @@ line-height: 21.5px; /* 134.375% */
 .header__nav-burger>svg {
     max-width: none;
 }
-
